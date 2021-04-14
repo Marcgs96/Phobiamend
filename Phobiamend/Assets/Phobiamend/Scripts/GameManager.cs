@@ -6,6 +6,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public int playerScore = 0;
+
     private void Awake()
     {
         // if the singleton hasn't been initialized yet
