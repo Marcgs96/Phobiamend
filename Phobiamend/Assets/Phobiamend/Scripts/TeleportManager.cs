@@ -44,7 +44,7 @@ public class TeleportManager : MonoBehaviour
         if (teleports[currentTeleportZone].state == TeleportZone.TELEPORT_STATE.HOVER)
         {
             teleports[currentTeleportZone].SetToNoneState();
-            if (teleports.Count > currentTeleportZone)
+            if (currentTeleportZone < teleports.Count - 1)
             {
                 currentTeleportZone++;
                 teleports[currentTeleportZone].SetToInState();
