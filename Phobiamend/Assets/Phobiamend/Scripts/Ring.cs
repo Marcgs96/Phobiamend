@@ -81,7 +81,7 @@ public class Ring : MonoBehaviour
             yield return new WaitForSeconds(0.01f);
         }
 
-        //ring ended lel
+        GameManager.instance.delegateHandler.OnRingCompleted();
     }
 
     public void Activate()
