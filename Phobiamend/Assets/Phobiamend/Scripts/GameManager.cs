@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public DelegateHandler delegateHandler;
 
     public int playerScore = 0;
 
@@ -25,7 +26,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        delegateHandler = GetComponent<DelegateHandler>();
     }
 
     // Update is called once per frame
