@@ -24,17 +24,20 @@ public class AcrophobiaLevel : MonoBehaviour
         foreach (GameSecuence gs in gameSecuences)
         {
             gs.teleport.SetToOutState();
+            gs.enabled = false;
         }
 
+        gameSecuences[0].enabled = true;
         gameSecuences[0].teleport.SetToInState();
         currentSecuence = 0;
     }
 
     void AdvanceSecuence() {
-        gameSecuences[currentSecuence].teleport.SetToNoneState();
+        gameSecuences[currentSecuence].enabled = false;
         if (currentSecuence < gameSecuences.Count - 1)
         {
             currentSecuence++;
+            gameSecuences[currentSecuence].enabled = true;
             gameSecuences[currentSecuence].teleport.SetToInState();
         }
         else

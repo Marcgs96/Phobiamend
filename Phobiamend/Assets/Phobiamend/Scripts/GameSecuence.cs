@@ -34,6 +34,9 @@ public class GameSecuence : MonoBehaviour
 
     public void InitSecuence()
     {
+        teleport.SetToNoneState();
+        teleport.gameObject.SetActive(false);
+
         for (int i = 0; i < ringsData.Count; i++)
         {
             Vector3 randomDirectorVector = new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)).normalized;
@@ -47,6 +50,8 @@ public class GameSecuence : MonoBehaviour
         }
 
         rings[0].gameObject.SetActive(true);
+
+        Debug.Log("Secuence initialized");
     }
 
     public void SetRingData(Ring ring, RingScriptableObject ringData)
@@ -66,10 +71,22 @@ public class GameSecuence : MonoBehaviour
         }
         else
         {
-            rings[currentRing].gameObject.SetActive(false);
+            Destroy(rings[currentRing].gameObject);
             GameManager.instance.delegateHandler.OnSecuenceCompleted();
         }
+
+        Debug.Log("Advanced to ring" + currentRing);
     }
+
+    public void CleanUp() {
+
+        foreach (var item in rings)
+        {
+            Destroy(item.gameObject);
+        }
+    
+    }
+
 
     public void OnDisable()
     {
