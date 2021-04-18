@@ -782,6 +782,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6038897118257394874, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1626486537}
+    - target: {fileID: 6038897118257394874, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTeleport
+      objectReference: {fileID: 0}
     - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
       propertyPath: m_Name
@@ -1085,6 +1095,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6038897118257394874, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1626486537}
+    - target: {fileID: 6038897118257394874, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTeleport
+      objectReference: {fileID: 0}
     - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
       propertyPath: m_Name
@@ -1437,6 +1457,16 @@ PrefabInstance:
         type: 3}
       propertyPath: rings.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038897118257394874, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1626486537}
+    - target: {fileID: 6038897118257394874, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_OnSelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnTeleport
       objectReference: {fileID: 0}
     - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
