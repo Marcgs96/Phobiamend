@@ -60,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 85296a95281ed8f429965dc60ed24fd6, type: 2}
+  - {fileID: 2100000, guid: da69ab3770d484c4aa29e67b62ac6915, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,6 +149,7 @@ MonoBehaviour:
     type: 3}
   rings: []
   teleport: {fileID: 5599962127625972648}
+  platform: {fileID: 5599962128774396968}
   platformSize: 4
 --- !u!1001 &5599962128112833134
 PrefabInstance:

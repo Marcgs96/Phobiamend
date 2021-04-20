@@ -10,6 +10,8 @@ public class GameSecuence : MonoBehaviour
     public TeleportZone teleport;
     private float ringPlacementRadius = 10.0f;
 
+    public GameObject platform;
+
     private int currentRing = 0;
     public int platformSize;
 
@@ -39,7 +41,7 @@ public class GameSecuence : MonoBehaviour
 
         for (int i = 0; i < ringsData.Count; i++)
         {
-            Vector3 randomDirectorVector = new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f), Random.Range(0.0f, 1.0f)).normalized;
+            Vector3 randomDirectorVector = new Vector3(Random.Range(0.0f, 1.0f), Random.Range(0.0f, -0.7f), Random.Range(0.0f, 1.0f)).normalized;
             rings.Add(Instantiate(ringPrefab, transform.position + (randomDirectorVector * ringPlacementRadius), Quaternion.identity).GetComponent<Ring>());
             SetRingData(rings[i], ringsData[i]);
         }
@@ -59,6 +61,7 @@ public class GameSecuence : MonoBehaviour
         ring.movementType = ringData.movementType;
         ring.maxSize = ringData.size;
         ring.speed = ringData.speed;
+        ring.mode = ringData.mode;
     }
 
     public void AdvanceInSecuence()
