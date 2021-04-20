@@ -2,9 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public struct LevelData
+{
+    public int platformsSize;
+    public int platformsHeight;
+    public float platformsTransparency;
+}
 public class AcrophobiaLevel : MonoBehaviour
 {
     public List<GameSecuence> gameSecuences;
+
+    public LevelData levelData;
 
     public int currentSecuence = 0;
 
@@ -12,6 +21,10 @@ public class AcrophobiaLevel : MonoBehaviour
     void Start()
     {
         InitLevel();
+        levelData.platformsHeight = 10;
+        levelData.platformsSize = 1;
+        levelData.platformsTransparency = 0.2f;
+        SetLevelData();
     }
 
     private void OnEnable()
@@ -43,6 +56,16 @@ public class AcrophobiaLevel : MonoBehaviour
         else
         {
             Debug.Log("Game Ended");
+        }
+    }
+
+    void SetLevelData()
+    {
+        foreach (var item in gameSecuences)
+        {
+            item.platform.transform.localScale = new Vector3(levelData.platformsSize, 1.0f, levelData.platformsSize);
+            item.transform.position = new Vector3(item.transform.position.x, levelData.platformsHeight, item.transform.position.z);
+            item.platform.GetComponent<MeshRenderer>().sharedMaterial.SetColor("_BaseColor", new Color(1.0f, 1.0f, 1.0f, levelData.platformsTransparency));
         }
     }
 

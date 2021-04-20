@@ -16,3 +16,4 @@ MonoBehaviour:
   size: 2
   speed: 3
   movementType: 1
+  mode: 0
