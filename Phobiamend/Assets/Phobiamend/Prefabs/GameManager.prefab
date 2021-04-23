@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1274437098014086506}
   - component: {fileID: 1274437098014086507}
-  - component: {fileID: 1274437098014086500}
+  - component: {fileID: 1626486537}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -44,7 +44,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b8443da3eacd2419796dcb84e002bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1274437098014086500
+  delegateHandler: {fileID: 0}
+  acrophobiaLevel: {fileID: 0}
+  player: {fileID: 0}
+--- !u!114 &1626486537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53,9 +56,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1274437098014086501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 832e9141484c5044ab8100ba32d8b437, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a1286d7939bb584abb7d0ea46a2dc56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  teleportGameObjects: []
-  currentTeleportZone: {fileID: 0}
-  nextTeleportZone: {fileID: 0}
