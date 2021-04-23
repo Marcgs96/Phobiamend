@@ -18,14 +18,19 @@ public class Ring : MonoBehaviour
     public float maxSize = 1.0f;
     float currentSize = 1.0f;
     float minSize = 0.2f;
-    int score = 10;
-    SphereCollider col;
+    int completionScore = 500;
+    int channelTickScore = 100;
+    BoxCollider col;
+
+    GameObject scoreText;
 
     Vector3 move;
     // Start is called before the first frame update
     void Start()
     {
-        col = this.GetComponent<SphereCollider>();
+        col = GetComponent<BoxCollider>();
+        scoreText = transform.GetChild(0).gameObject;
+        scoreText.GetComponent<MeshRenderer>().material.DOFade(0.0f, 0.0f);
 
         if (mode == MODE.CHANNEL)
         {
@@ -80,16 +85,26 @@ public class Ring : MonoBehaviour
 
     IEnumerator RingBeingHitted()
     {
-        while (currentSize >= 0.2f)
+        StartCoroutine(ShowChannelingScore(1.0f));
+        while (currentSize >= 1.0f)
         {
             transform.localScale -= new Vector3(0.01f, 0.01f, 0.0f);
             currentSize -= 0.01f;
-            col.radius -= 0.01f;
             transform.position += move * Time.deltaTime;
-            GameManager.instance.playerScore += score;
             yield return new WaitForSeconds(0.01f);
         }
         CompleteRing();
+    }
+
+
+    IEnumerator ShowChannelingScore(float time)
+    {
+        while (beingHitted)
+        {
+            ShowScore(channelTickScore, time);
+            GameManager.instance.acrophobiaLevel.ringScore += channelTickScore;
+            yield return new WaitForSeconds(time);
+        }
     }
 
     public void Activate()
@@ -98,21 +113,54 @@ public class Ring : MonoBehaviour
         {
             CompleteRing();
         }
-        beingHitted = true;
-        StartCoroutine("RingBeingHitted");
+        else
+        {
+            beingHitted = true;
+            StartCoroutine("RingBeingHitted");
+        }
     }
 
     public void Deactivate()
     {
-        beingHitted = false;
-        StopCoroutine("RingBeingHitted");
+        if (beingHitted)
+        {
+            beingHitted = false;
+            StopCoroutine("RingBeingHitted");
+        }
     }
 
     public void CompleteRing() {
         Vector3 newScale = transform.localScale + new Vector3(1.0f, 1.0f, 1.0f);
         transform.DOScale(newScale, 1.0f);
         GetComponent<MeshRenderer>().material.DOFade(0.0f, 1.0f);
-        Invoke("OnCompleteRing", 1.0f);
+        beingHitted = false;
+        StopCoroutine("RingBeingHitted");
+        Invoke("OnCompleteRing", 1.5f);
+        ShowScore(completionScore, 1.0f);
+        GameManager.instance.acrophobiaLevel.ringScore += completionScore;
+        col.enabled = false;
+    }
+
+    public void ShowScore(int score, float showTime)
+    {
+        scoreText.transform.DOScale(2.0f, 0.5f);
+        scoreText.GetComponent<TextMesh>().text = "+" + score.ToString();
+        scoreText.GetComponent<MeshRenderer>().material.DOFade(1.0f, showTime * 0.5f);
+        scoreText.transform.DOLocalMoveY(1.0f, showTime).OnComplete(ResetScoreTextPosition);
+        StartCoroutine(HideScore((float)(showTime * 0.5)));
+    }
+
+    IEnumerator HideScore(float hideTime)
+    {
+        yield return new WaitForSeconds(hideTime);
+
+        scoreText.transform.DOScale(1.0f, hideTime);
+        scoreText.GetComponent<MeshRenderer>().material.DOFade(0.0f, hideTime);
+    }
+
+    public void ResetScoreTextPosition()
+    {
+        scoreText.transform.localPosition = new Vector3(-1.5f, 0.0f, 0.0f);
     }
 
     public void OnCompleteRing()
