@@ -40,7 +40,7 @@ public class GameManager : MonoBehaviour
 
     public void StartLevel(string level)
     {
-       SceneManager.LoadScene("Acrophobia");
+       SceneManager.LoadScene(level);
     }
 
     public void SetPlatformHeightData(float height)
@@ -80,6 +80,20 @@ public class GameManager : MonoBehaviour
             acrophobiaLevel = gameObject.AddComponent<AcrophobiaLevel>();
             acrophobiaLevel.levelData = acrophobiaLevelData;
             acrophobiaLevel.gameSecuences = GameObject.Find("Level").GetComponent<AcrophobiaLevelContainer>().gameSecuences;
+        }else if(scene.name == "PhobiamendHall")
+        {
+            transform.position = new Vector3(0, 0, 20);
+        }
+
+        SetCanvasUIEventCamera();
+    }
+
+    public void SetCanvasUIEventCamera()
+    {
+        GameObject[] canvas = GameObject.FindGameObjectsWithTag("Canvas");
+        foreach (var item in canvas)
+        {
+            item.GetComponent<Canvas>().worldCamera = Camera.main;
         }
     }
 

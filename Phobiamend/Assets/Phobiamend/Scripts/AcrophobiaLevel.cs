@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 
 public struct AcrophobiaLevelData
@@ -19,6 +21,8 @@ public class AcrophobiaLevel : MonoBehaviour
 
     public GameObject startPlatform;
     public GameObject finalPlatform;
+    private GameObject scoreUI;
+    public TeleportZone endTeleport;
 
     public int playerScore = 0;
     public int ringScore = 0;
@@ -30,6 +34,8 @@ public class AcrophobiaLevel : MonoBehaviour
     {
         startPlatform = GameObject.Find("StartingPlatform");
         finalPlatform = GameObject.Find("FinalPlatform");
+        endTeleport = GameObject.Find("EndTeleport").GetComponent<TeleportZone>();
+        scoreUI = finalPlatform.transform.GetChild(0).gameObject;
         levelData.platformsHeight = 10;
         SetLevelData();
         InitLevel();
@@ -38,6 +44,8 @@ public class AcrophobiaLevel : MonoBehaviour
     private void OnEnable()
     {
         DelegateHandler.secuenceCompleted += AdvanceSecuence;
+        DelegateHandler.endlevel += EndLevel;
+        DelegateHandler.restartlevel += RestartLevel;
     }
 
     void InitLevel()
@@ -49,9 +57,30 @@ public class AcrophobiaLevel : MonoBehaviour
             gs.enabled = false;
         }
 
+        endTeleport.SetToOutState();
+
         gameSecuences[0].enabled = true;
         gameSecuences[0].teleport.SetToInState();
         currentSecuence = 0;
+
+        playerScore = 0;
+        ringScore = 0;
+        timeScore = 0;
+        heightMultiplier = 0;
+    }
+
+    public void RestartLevel()
+    {
+        foreach (var item in gameSecuences)
+        {
+            item.enabled = true;
+            item.Restart();
+        }
+        scoreUI.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(1).GetChild(3).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(1).GetChild(5).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(1).GetChild(7).GetComponent<Text>().text = "0000";
+        InitLevel();
     }
 
     void AdvanceSecuence() {
@@ -64,7 +93,7 @@ public class AcrophobiaLevel : MonoBehaviour
         }
         else
         {
-            Debug.Log("Game Ended");
+            endTeleport.SetToInState();
         }
     }
 
@@ -89,7 +118,21 @@ public class AcrophobiaLevel : MonoBehaviour
         }
         else
         {
-
+            endTeleport.SetToNoneState();
+            endTeleport.gameObject.SetActive(false);
+            CalculateScore();
         }
     }
+
+    public void CalculateScore()
+    {
+        heightMultiplier = levelData.platformsHeight / 5;
+        playerScore = (ringScore + timeScore) * heightMultiplier;
+
+        scoreUI.transform.GetChild(1).GetChild(1).GetComponent<Text>().DOText(ringScore.ToString(), 1.5f, true, ScrambleMode.Numerals);
+        scoreUI.transform.GetChild(1).GetChild(3).GetComponent<Text>().DOText(timeScore.ToString(), 2.5f, true, ScrambleMode.Numerals);
+        scoreUI.transform.GetChild(1).GetChild(5).GetComponent<Text>().DOText(heightMultiplier.ToString(), 3.5f, true, ScrambleMode.Numerals);
+        scoreUI.transform.GetChild(1).GetChild(7).GetComponent<Text>().DOText(playerScore.ToString(), 4.5f, true, ScrambleMode.Numerals);
+    }
+
 }

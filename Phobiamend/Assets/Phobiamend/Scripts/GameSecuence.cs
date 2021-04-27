@@ -84,6 +84,13 @@ public class GameSecuence : MonoBehaviour
         Debug.Log("Secuence initialized");
     }
 
+    public void Restart()
+    {
+        currentTime = 30;
+        currentRing = 0;
+        userInterface.SetActive(false);
+    }
+
     public void SetRingData(Ring ring, RingScriptableObject ringData)
     {
         ring.movementType = ringData.movementType;
@@ -102,7 +109,11 @@ public class GameSecuence : MonoBehaviour
         }
         else
         {
-            Destroy(rings[currentRing].gameObject);
+            foreach (var item in rings)
+            {
+                Destroy(item.gameObject);
+            }
+            GameManager.instance.acrophobiaLevel.timeScore += (int)currentTime;
             GameManager.instance.delegateHandler.OnSecuenceCompleted();
         }
 
