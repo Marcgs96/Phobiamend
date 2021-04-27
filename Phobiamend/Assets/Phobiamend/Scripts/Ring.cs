@@ -31,6 +31,7 @@ public class Ring : MonoBehaviour
         col = GetComponent<BoxCollider>();
         scoreText = transform.GetChild(0).gameObject;
         scoreText.GetComponent<MeshRenderer>().material.DOFade(0.0f, 0.0f);
+        transform.LookAt(GameManager.instance.player.transform);
 
         if (mode == MODE.CHANNEL)
         {

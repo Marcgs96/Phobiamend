@@ -698,6 +698,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1642794401227798913, guid: 4f9c805e57492d34da6a2d6069bed2c1,
+        type: 3}
+      propertyPath: useVelocity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1642794401227798913, guid: 4f9c805e57492d34da6a2d6069bed2c1,
+        type: 3}
+      propertyPath: motionTarget
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8793034768953510948, guid: 4f9c805e57492d34da6a2d6069bed2c1,
         type: 3}
       propertyPath: m_RootOrder
@@ -711,12 +721,12 @@ PrefabInstance:
     - target: {fileID: 8793034768953510948, guid: 4f9c805e57492d34da6a2d6069bed2c1,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.54
       objectReference: {fileID: 0}
     - target: {fileID: 8793034768953510948, guid: 4f9c805e57492d34da6a2d6069bed2c1,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 20
+      value: -3.05
       objectReference: {fileID: 0}
     - target: {fileID: 8793034768953510948, guid: 4f9c805e57492d34da6a2d6069bed2c1,
         type: 3}
@@ -758,7 +768,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: VR Rig
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1642794401227798913, guid: 4f9c805e57492d34da6a2d6069bed2c1, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4f9c805e57492d34da6a2d6069bed2c1, type: 3}
 --- !u!20 &1592971348 stripped
 Camera:
@@ -968,9 +979,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1832881086477091079, guid: e2ad12cb95b9f874abecbeebbd8d1e9f,
         type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832881086477091079, guid: e2ad12cb95b9f874abecbeebbd8d1e9f,
+        type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1728397797}
+    - target: {fileID: 1832881086477091079, guid: e2ad12cb95b9f874abecbeebbd8d1e9f,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetPlatformTransparencyData
+      objectReference: {fileID: 0}
     - target: {fileID: 1832881086847053575, guid: e2ad12cb95b9f874abecbeebbd8d1e9f,
         type: 3}
       propertyPath: m_AnchorMax.y

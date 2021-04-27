@@ -28,6 +28,7 @@ public class GameSecuence : MonoBehaviour
     {
         DelegateHandler.ringCompleted += AdvanceInSecuence;
         DelegateHandler.teleport += InitSecuence;
+        userInterface.SetActive(false);
     }
 
     // Start is called before the first frame update
@@ -37,7 +38,6 @@ public class GameSecuence : MonoBehaviour
         teleport = transform.GetChild(0).GetComponent<TeleportZone>();
         timeText = userInterface.transform.GetChild(0).GetChild(1).GetComponent<Text>();
         ringsCompletedText = userInterface.transform.GetChild(0).GetChild(3).GetComponent<Text>();
-        userInterface.SetActive(false);
     }
 
     // Update is called once per frame
@@ -48,13 +48,7 @@ public class GameSecuence : MonoBehaviour
             currentTime -= Time.deltaTime;
             var ts = TimeSpan.FromSeconds(currentTime);
             timeText.text = string.Format("{0:00}:{1:00}", ts.TotalMinutes, ts.Seconds);
-            ringsCompletedText.text = currentRing.ToString() + "/" + rings.Count.ToString();
-
-            if (!completed && currentTime <= 0)
-            {
-                GameManager.instance.acrophobiaLevel.EndLevel(false);
-                active = false;
-            }
+            ringsCompletedText.text = (currentRing + 1).ToString() + "/" + rings.Count.ToString();
         }
     }
 
@@ -65,7 +59,7 @@ public class GameSecuence : MonoBehaviour
 
         for (int i = 0; i < ringsData.Count; i++)
         {
-            Vector3 randomDirectorVector = new Vector3(UnityEngine.Random.Range(0.0f, 1.0f), UnityEngine.Random.Range(0.0f, -0.7f), UnityEngine.Random.Range(0.0f, 1.0f)).normalized;
+            Vector3 randomDirectorVector = new Vector3(UnityEngine.Random.Range(-1.0f, 1.0f), UnityEngine.Random.Range(0.0f, -0.7f), UnityEngine.Random.Range(-1.0f, 1.0f)).normalized;
             rings.Add(Instantiate(ringPrefab, transform.position + (randomDirectorVector * ringPlacementRadius), Quaternion.identity).GetComponent<Ring>());
             SetRingData(rings[i], ringsData[i]);
         }
@@ -134,5 +128,6 @@ public class GameSecuence : MonoBehaviour
     {
         DelegateHandler.ringCompleted -= AdvanceInSecuence;
         DelegateHandler.teleport -= InitSecuence;
+        userInterface.SetActive(false);
     }
 }
