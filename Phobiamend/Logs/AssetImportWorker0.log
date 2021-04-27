@@ -15,12 +15,12 @@ D:/Phobiamend/Phobiamend
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-51005
+52213
 Successfully changed project path to: D:/Phobiamend/Phobiamend
 D:/Phobiamend/Phobiamend
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 63.58 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.98 ms.
+Refreshing native plugins compatible for Editor in 60.91 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.73 ms.
 Initialize engine version: 2020.3.1f1 (77a89f25062f)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
 [Subsystems] Discovering subsystems at path D:/Phobiamend/Phobiamend/Assets
@@ -36,25 +36,25 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56588
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56804
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003362 seconds.
+Registered in 0.001728 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 101.46 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 123.07 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.09 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.596 seconds
+- Completed reload, in  1.182 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.003554 seconds.
+Registered in 0.002539 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 132.44 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 102.49 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.10 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -70,59 +70,187 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  2.191 seconds
+- Completed reload, in  1.797 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
-Preloading 1 native plugins for Editor in 0.08 ms.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.75 seconds
+Refreshing native plugins compatible for Editor in 2.02 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
 Unloading 3218 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 160.6 MB.
-System memory in use after: 160.8 MB.
+System memory in use before: 161.7 MB.
+System memory in use after: 161.9 MB.
 
 Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3684.
-Total: 4.508900 ms (FindLiveObjects: 0.540800 ms CreateObjectMapping: 0.415100 ms MarkObjects: 3.418000 ms  DeleteObjects: 0.132900 ms)
+Total: 4.550700 ms (FindLiveObjects: 0.535400 ms CreateObjectMapping: 0.422900 ms MarkObjects: 3.453100 ms  DeleteObjects: 0.137600 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Phobiamend/Scenes/PhobiamendHall.unity
-  artifactKey: Guid(f0439a2f8d9edf34d8f316cafcb47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Phobiamend/Scenes/PhobiamendHall.unity using Guid(f0439a2f8d9edf34d8f316cafcb47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c92074276ef6ea8ae04c8bf0584aba3') in 0.024049 seconds
-  Import took 0.033275 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 40.097925 seconds.
-  path: Assets/Phobiamend/Scenes/Acrophobia.unity
-  artifactKey: Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Phobiamend/Scenes/Acrophobia.unity using Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a7c00e45b0565ec83ce77240ee78914') in 0.007482 seconds
-  Import took 0.013603 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 42.392932 seconds.
-  path: Assets/TextMesh Pro
-  artifactKey: Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro using Guid(f54d1bd14bd3ca042bd867b519fee8cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fe1e02b069bed39c508f869cad12467') in 0.007680 seconds
-  Import took 0.013566 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.319451 seconds.
   path: Assets/Town Constructor 3/Scenes/DemoSceneLightSetting3.unity
   artifactKey: Guid(09f25dfdfde37364388a302888402d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Town Constructor 3/Scenes/DemoSceneLightSetting3.unity using Guid(09f25dfdfde37364388a302888402d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2574b144077d68fd1a5ebd1eb43a2567') in 0.006991 seconds
-  Import took 0.012822 seconds .
+Start importing Assets/Town Constructor 3/Scenes/DemoSceneLightSetting3.unity using Guid(09f25dfdfde37364388a302888402d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d0aa43f2c699068981e051ca274ae6') in 0.033612 seconds
+  Import took 0.080815 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000985 seconds.
+  path: Assets/Town Constructor 3/Scenes
+  artifactKey: Guid(ea85afcfaf2306e43949e2b4f3d4ad9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Scenes using Guid(ea85afcfaf2306e43949e2b4f3d4ad9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae6a39a931a221dce682799671b66811') in 0.011841 seconds
+  Import took 0.091444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.030051 seconds.
+  path: Assets/Town Constructor 3/Scenes/DemoSceneLightSetting3.unity
+  artifactKey: Guid(09f25dfdfde37364388a302888402d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Scenes/DemoSceneLightSetting3.unity using Guid(09f25dfdfde37364388a302888402d81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43d0aa43f2c699068981e051ca274ae6') in 0.002452 seconds
+  Import took 0.009692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 81.667614 seconds.
+  path: Assets/Town Constructor 3/Textures
+  artifactKey: Guid(a7ac75e937ffc7e4d9633bcbd90544b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures using Guid(a7ac75e937ffc7e4d9633bcbd90544b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dbaeca1058d750196ad35f5deb8607d') in 0.006139 seconds
+  Import took 0.042278 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 45.446790 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_B1.tif
+  artifactKey: Guid(ed14220f4c187364aa9dbe3a376ff7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_B1.tif using Guid(ed14220f4c187364aa9dbe3a376ff7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480531f76b196a859c001ad3d352ee16') in 0.237496 seconds
+  Import took 0.279803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_R1.tiff
+  artifactKey: Guid(31cd4dcd709174043826e2d49e7d5d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_R1.tiff using Guid(31cd4dcd709174043826e2d49e7d5d33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32a71a7ef21a03a678d6e85c7cd7f85d') in 0.224663 seconds
+  Import took 0.268228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_B1.tif
+  artifactKey: Guid(ed14220f4c187364aa9dbe3a376ff7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_B1.tif using Guid(ed14220f4c187364aa9dbe3a376ff7d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '480531f76b196a859c001ad3d352ee16') in 0.110112 seconds
+  Import took 0.123267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_R1_NRM.TIF
+  artifactKey: Guid(cb318e0f0be543445b709a8dbaf5b3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_R1_NRM.TIF using Guid(cb318e0f0be543445b709a8dbaf5b3fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40c233e14e07c40319a3c62cc541b887') in 0.085179 seconds
+  Import took 0.098122 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_B1_SPEC.tiff
+  artifactKey: Guid(e1f27996e9ce3c144baa40816f6af9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_B1_SPEC.tiff using Guid(e1f27996e9ce3c144baa40816f6af9fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '675e806992e7ce5182b3a28f45033cd4') in 0.024384 seconds
+  Import took 0.057871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_B1_NRM.tif
+  artifactKey: Guid(c647b10d037fa8243b3fbc45b19ab2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_B1_NRM.tif using Guid(c647b10d037fa8243b3fbc45b19ab2de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95ba49af3762704e482ebe98d4d53161') in 0.104785 seconds
+  Import took 0.117163 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_B1_Emission.tif
+  artifactKey: Guid(934f3a27b71c604479d864afc79a4fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_B1_Emission.tif using Guid(934f3a27b71c604479d864afc79a4fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531284324381365b8c9298585769d0ed') in 0.022917 seconds
+  Import took 0.060339 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000238 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_R1_SPEC.tiff
+  artifactKey: Guid(6a0a409e8bce117478be23cdc8b2a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_R1_SPEC.tiff using Guid(6a0a409e8bce117478be23cdc8b2a1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '298d1167acd5e2ab235d6f64ddc85ce2') in 0.043749 seconds
+  Import took 0.067819 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/Town Constructor 3/Textures/Atlas_B1_Emission.tif
+  artifactKey: Guid(934f3a27b71c604479d864afc79a4fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/Atlas_B1_Emission.tif using Guid(934f3a27b71c604479d864afc79a4fc4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531284324381365b8c9298585769d0ed') in 0.008272 seconds
+  Import took 0.016792 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/Town Constructor 3/Textures/AtlasLow_B1.tif
+  artifactKey: Guid(1093c0f9beac8f849bc185202d76bee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/AtlasLow_B1.tif using Guid(1093c0f9beac8f849bc185202d76bee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f776eb49a9c05c6d092b0b30546d0a3') in 0.016858 seconds
+  Import took 0.048713 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 83.023815 seconds.
+  path: Assets/Town Constructor 3/Textures/AtlasLow_B1_Emission.tif
+  artifactKey: Guid(2aa6b5fa0b3051a4e972f16ee0683a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/AtlasLow_B1_Emission.tif using Guid(2aa6b5fa0b3051a4e972f16ee0683a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4566840adf73dd44cca0f7765dbbb0') in 0.015585 seconds
+  Import took 0.040677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Town Constructor 3/Textures/AtlasLow_B2.tiff
+  artifactKey: Guid(5de085d7ead226444b1e83ff1df3042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/AtlasLow_B2.tiff using Guid(5de085d7ead226444b1e83ff1df3042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f8b9517e5fa8c3ebf615f8aba6597a') in 0.020041 seconds
+  Import took 0.028539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/Town Constructor 3/Textures/AtlasLow_B1_Emission.tif
+  artifactKey: Guid(2aa6b5fa0b3051a4e972f16ee0683a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/AtlasLow_B1_Emission.tif using Guid(2aa6b5fa0b3051a4e972f16ee0683a5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b4566840adf73dd44cca0f7765dbbb0') in 0.009152 seconds
+  Import took 0.020140 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.010024 seconds.
+  path: Assets/Town Constructor 3/Textures/AtlasLow_B2.tiff
+  artifactKey: Guid(5de085d7ead226444b1e83ff1df3042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Textures/AtlasLow_B2.tiff using Guid(5de085d7ead226444b1e83ff1df3042f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08f8b9517e5fa8c3ebf615f8aba6597a') in 0.024453 seconds
+  Import took 0.033943 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.308609 seconds.
+  path: Assets/Town Constructor 3/Materials
+  artifactKey: Guid(1de6cb81f8d0c8a468f6ba356b5d262e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Town Constructor 3/Materials using Guid(1de6cb81f8d0c8a468f6ba356b5d262e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e407ee872c7b9c5499f90762346c7553') in 0.005940 seconds
+  Import took 0.037993 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 160.032844 seconds.
+  path: Assets/Phobiamend/Scenes/Acrophobia.unity
+  artifactKey: Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/Acrophobia.unity using Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8cb7fb08ff4adc1606107a6cbf2e545') in 0.023966 seconds
+  Import took 0.052314 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.002139 seconds.
+Registered in 0.002870 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 0.77 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.07 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -134,32 +262,16 @@ NullReferenceException: Object reference not set to an instance of an object
 (Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.668 seconds
+- Completed reload, in  1.144 seconds
 Platform modules already initialized, skipping
 Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
-Refreshing native plugins compatible for Editor in 0.97 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 1.07 ms, found 3 plugins.
 Preloading 1 native plugins for Editor in 0.08 ms.
 Unloading 3016 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 148.1 MB.
-System memory in use after: 148.4 MB.
+System memory in use before: 152.2 MB.
+System memory in use after: 152.4 MB.
 
-Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3688.
-Total: 4.545200 ms (FindLiveObjects: 0.522800 ms CreateObjectMapping: 0.387600 ms MarkObjects: 3.600400 ms  DeleteObjects: 0.032400 ms)
-
-========================================================================
-Received Import Request.
-  Time since last request: 39.978088 seconds.
-  path: Assets/Presets
-  artifactKey: Guid(558255460b74ec04fa70b5570e9327bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Presets using Guid(558255460b74ec04fa70b5570e9327bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eda913f950f158be8a7387dd059da7b9') in 0.010860 seconds
-  Import took 0.018149 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.240254 seconds.
-  path: Assets/Phobiamend/Scenes/Acrophobia.unity
-  artifactKey: Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Phobiamend/Scenes/Acrophobia.unity using Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '131bd694850aafe36de69458461c833e') in 0.010413 seconds
-  Import took 0.017004 seconds .
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3693.
+Total: 4.153400 ms (FindLiveObjects: 0.517200 ms CreateObjectMapping: 0.513800 ms MarkObjects: 3.084200 ms  DeleteObjects: 0.035500 ms)
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
