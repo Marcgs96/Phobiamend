@@ -36,7 +36,6 @@ public class AcrophobiaLevel : MonoBehaviour
         finalPlatform = GameObject.Find("FinalPlatform");
         endTeleport = GameObject.Find("EndTeleport").GetComponent<TeleportZone>();
         scoreUI = finalPlatform.transform.GetChild(0).gameObject;
-        levelData.platformsHeight = 10;
         SetLevelData();
         InitLevel();
     }
