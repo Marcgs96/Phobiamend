@@ -7,6 +7,5 @@ public class RingScriptableObject : ScriptableObject
 
     public float size;
     public float speed;
-    public Ring.MOVEMENT_TYPE movementType;
     public Ring.MODE mode;
 }

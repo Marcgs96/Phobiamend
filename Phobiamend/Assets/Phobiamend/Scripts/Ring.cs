@@ -6,10 +6,7 @@ using DG.Tweening;
 
 public class Ring : MonoBehaviour
 {
-    public enum MOVEMENT_TYPE { NONE, UP, DOWN, LEFT, RIGHT, UPLEFT, UPRIGHT, DOWNLEFT, DOWNRIGHT, CIRCULAR};
-    public MOVEMENT_TYPE movementType = MOVEMENT_TYPE.NONE;
-
-    public enum MODE { ONESHOT, CHANNEL };
+    public enum MODE { ONESHOT, CHANNEL, MOVEMENT };
     public MODE mode = MODE.ONESHOT;
 
     public float speed = 1.0f;
@@ -20,6 +17,8 @@ public class Ring : MonoBehaviour
     float minSize = 0.2f;
     int completionScore = 500;
     int channelTickScore = 100;
+    int timesHitted = 0;
+    int totalTimesToHit = 3;
     BoxCollider col;
 
     GameObject scoreText;
@@ -33,48 +32,19 @@ public class Ring : MonoBehaviour
         scoreText.GetComponent<MeshRenderer>().material.DOFade(0.0f, 0.0f);
         transform.LookAt(GameManager.instance.player.transform);
 
-        if (mode == MODE.CHANNEL)
+        switch (mode)
         {
-            currentSize = maxSize;
-            transform.localScale = new Vector3(currentSize, currentSize, currentSize);
-
-            switch (movementType)
-            {
-                case MOVEMENT_TYPE.NONE:
-                    move = Vector3.zero;
-                    break;
-                case MOVEMENT_TYPE.UP:
-                    move = Vector3.up;
-                    break;
-                case MOVEMENT_TYPE.DOWN:
-                    move = Vector3.down;
-                    break;
-                case MOVEMENT_TYPE.LEFT:
-                    move = Vector3.left;
-                    break;
-                case MOVEMENT_TYPE.RIGHT:
-                    move = Vector3.right;
-                    break;
-                case MOVEMENT_TYPE.UPLEFT:
-                    move = Vector3.up + Vector3.left;
-                    break;
-                case MOVEMENT_TYPE.UPRIGHT:
-                    move = Vector3.up + Vector3.right;
-                    break;
-                case MOVEMENT_TYPE.DOWNLEFT:
-                    move = Vector3.down + Vector3.left;
-                    break;
-                case MOVEMENT_TYPE.DOWNRIGHT:
-                    move = Vector3.down + Vector3.right;
-                    break;
-                case MOVEMENT_TYPE.CIRCULAR:
-
-                    break;
-                default:
-                    break;
-            }
-
-            move *= speed;
+            case MODE.ONESHOT:
+                break;
+            case MODE.CHANNEL:
+                currentSize = maxSize;
+                transform.localScale = new Vector3(currentSize, currentSize, currentSize);
+                break;
+            case MODE.MOVEMENT:
+                move = Vector3.right * speed;
+                break;
+            default:
+                break;
         }
     }
 
@@ -91,7 +61,6 @@ public class Ring : MonoBehaviour
         {
             transform.localScale -= new Vector3(0.01f, 0.01f, 0.0f);
             currentSize -= 0.01f;
-            transform.position += move * Time.deltaTime;
             yield return new WaitForSeconds(0.01f);
         }
         CompleteRing();
@@ -108,16 +77,44 @@ public class Ring : MonoBehaviour
         }
     }
 
+    IEnumerator MoveRing(float time)
+    {
+        float currentTime = 0.0f;
+        move = Random.insideUnitSphere;
+        while(currentTime <= time)
+        {
+            currentTime += Time.deltaTime;
+            transform.localPosition += move * speed * Time.deltaTime;
+            yield return new WaitForFixedUpdate();
+        }
+    }
+
     public void Activate()
     {
-        if(mode == MODE.ONESHOT)
+        switch (mode)
         {
-            CompleteRing();
-        }
-        else
-        {
-            beingHitted = true;
-            StartCoroutine("RingBeingHitted");
+            case MODE.ONESHOT:
+                CompleteRing();
+                break;
+            case MODE.CHANNEL:
+                beingHitted = true;
+                StartCoroutine("RingBeingHitted");
+                break;
+            case MODE.MOVEMENT:
+                timesHitted += 1;
+
+                if (timesHitted == totalTimesToHit)
+                {
+                    CompleteRing();
+                }
+                else
+                {
+                    StartCoroutine(MoveRing(0.35f));
+                    ShowScore(channelTickScore, 1.0f);
+                }
+                break;
+            default:
+                break;
         }
     }
 

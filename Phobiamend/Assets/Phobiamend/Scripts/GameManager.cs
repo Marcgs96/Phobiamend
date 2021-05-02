@@ -75,14 +75,13 @@ public class GameManager : MonoBehaviour
 
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Acrophobia")
-        {
-            acrophobiaLevel = gameObject.AddComponent<AcrophobiaLevel>();
-            acrophobiaLevel.levelData = acrophobiaLevelData;
-            acrophobiaLevel.gameSecuences = GameObject.Find("Level").GetComponent<AcrophobiaLevelContainer>().gameSecuences;
-        }else if(scene.name == "PhobiamendHall")
+        if(scene.name == "PhobiamendHall")
         {
             transform.position = new Vector3(0, 0, 20);
+        }
+        else
+        {
+            SetLevelData(scene.name);
         }
 
         SetCanvasUIEventCamera();
@@ -94,6 +93,16 @@ public class GameManager : MonoBehaviour
         foreach (var item in canvas)
         {
             item.GetComponent<Canvas>().worldCamera = Camera.main;
+        }
+    }
+
+    void SetLevelData(string level)
+    {
+        if (level.Equals("Acrophobia"))
+        {
+            acrophobiaLevel = gameObject.AddComponent<AcrophobiaLevel>();
+            acrophobiaLevel.levelData = acrophobiaLevelData;
+            acrophobiaLevel.gameSecuences = GameObject.Find("Level").GetComponent<AcrophobiaLevelContainer>().gameSecuences; //Contains the GameSecuences of the level.
         }
     }
 

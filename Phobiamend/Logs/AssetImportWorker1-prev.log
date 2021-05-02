@@ -1,0 +1,693 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.928; Version 2009; 64bit' Language: 'es' Physical Memory: 16245 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Phobiamend/Phobiamend
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+54215
+Successfully changed project path to: D:/Phobiamend/Phobiamend
+D:/Phobiamend/Phobiamend
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 87.73 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.80 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Phobiamend/Phobiamend/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   
+    VRAM:     4053 MB
+    Driver:   27.21.14.5730
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Shader 'AngryBots/PlanarRealtimeReflection': fallback shader 'AngryBots/Fallback' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56352
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003078 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 74.62 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.730 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002246 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 81.74 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.634 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'AngryBots/PlanarRealtimeReflection': fallback shader 'AngryBots/Fallback' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
+Refreshing native plugins compatible for Editor in 1.06 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 3271 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 171.0 MB.
+System memory in use after: 170.0 MB.
+
+Unloading 43 unused Assets to reduce memory usage. Loaded Objects now: 3714.
+Total: 7.251800 ms (FindLiveObjects: 0.523300 ms CreateObjectMapping: 0.444500 ms MarkObjects: 4.637500 ms  DeleteObjects: 1.644600 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Hazelwoodloft/Oculus_room_02_lounge_03_kitchen_day.unity
+  artifactKey: Guid(e825b19018c4ae14981338b9c77568ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Oculus_room_02_lounge_03_kitchen_day.unity using Guid(e825b19018c4ae14981338b9c77568ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62415cc7dcb6a6a1d4cf651a0f49b93e') in 0.025477 seconds
+  Import took 0.033264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/Hazelwoodloft
+  artifactKey: Guid(269fa1dc587131846a47750e3c512a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft using Guid(269fa1dc587131846a47750e3c512a9a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73fe775e4b5646be102e93e6ffd53ba0') in 0.013534 seconds
+  Import took 0.020834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.267349 seconds.
+  path: Assets/Phobiamend/Scenes/Aracnophobia.unity
+  artifactKey: Guid(d79efbdc37849d141bc81f6f681ff31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/Aracnophobia.unity using Guid(d79efbdc37849d141bc81f6f681ff31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd791563b93a39ddd272b6b7dd285ef1e') in 0.009904 seconds
+  Import took 0.032842 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 38.866002 seconds.
+  path: Assets/Hazelwoodloft/Geometry
+  artifactKey: Guid(2b6ae8b8b4cf39a4e9b55342c853a983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry using Guid(2b6ae8b8b4cf39a4e9b55342c853a983) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd185216133439f93093ce5b454e6bdfd') in 0.006581 seconds
+  Import took 0.013180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.516626 seconds.
+  path: Assets/Hazelwoodloft/Geometry/room_02_lounge_complete
+  artifactKey: Guid(49954ec33df9c9845adf8f16cbd2e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/room_02_lounge_complete using Guid(49954ec33df9c9845adf8f16cbd2e1ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd8529c88904e8887fca127691bb6bc0') in 0.006850 seconds
+  Import took 0.013963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.450757 seconds.
+  path: Assets/Hazelwoodloft/Geometry/room_02_lounge_complete/items_02_lounge_complete.fbx
+  artifactKey: Guid(fbd5c2dde12bf684b9d585de9d758324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/room_02_lounge_complete/items_02_lounge_complete.fbx using Guid(fbd5c2dde12bf684b9d585de9d758324) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71a12e43743155072579a86502b65eb8') in 1.150294 seconds
+  Import took 1.161947 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 73.696611 seconds.
+  path: Assets/Hazelwoodloft/Geometry/Materials/room5_Add_Night.mat
+  artifactKey: Guid(0d4875a928091de43bd66445264b51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/Materials/room5_Add_Night.mat using Guid(0d4875a928091de43bd66445264b51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e6f74b27882841e55ee3d5c3806fef') in 0.224593 seconds
+  Import took 0.237244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000240 seconds.
+  path: Assets/Hazelwoodloft/Geometry/Materials/room_05_pack/room5_Add_pack_night.mat
+  artifactKey: Guid(d0f0c9499d6fc4341a3d925ba0c0137b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/Materials/room_05_pack/room5_Add_pack_night.mat using Guid(d0f0c9499d6fc4341a3d925ba0c0137b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a0e7f7664cf1e53b37a29833cd4236') in 0.056490 seconds
+  Import took 0.072496 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/Hazelwoodloft/Geometry/Materials/room5_Add_Night.mat
+  artifactKey: Guid(0d4875a928091de43bd66445264b51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/Materials/room5_Add_Night.mat using Guid(0d4875a928091de43bd66445264b51fe) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0e6f74b27882841e55ee3d5c3806fef') in 0.070910 seconds
+  Import took 0.089645 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/Hazelwoodloft/Geometry/Materials/room_05_pack/room5_Add_pack_night.mat
+  artifactKey: Guid(d0f0c9499d6fc4341a3d925ba0c0137b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/Materials/room_05_pack/room5_Add_pack_night.mat using Guid(d0f0c9499d6fc4341a3d925ba0c0137b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72a0e7f7664cf1e53b37a29833cd4236') in 0.064294 seconds
+  Import took 0.076570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 57.221486 seconds.
+  path: Assets/Hazelwoodloft/Geometry/room_05_city_dome
+  artifactKey: Guid(798f1a1b30060014c9abc1815ce75006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/room_05_city_dome using Guid(798f1a1b30060014c9abc1815ce75006) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45ff23c2fd55e90050e936a75753904b') in 0.011167 seconds
+  Import took 0.033415 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.406649 seconds.
+  path: Assets/Hazelwoodloft/Geometry/room_05_city_dome/room_05_pack_environment_day.fbx
+  artifactKey: Guid(b920d9752f360a74f9532c50a2e18d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/room_05_city_dome/room_05_pack_environment_day.fbx using Guid(b920d9752f360a74f9532c50a2e18d6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9df84d3e3bfadd4b660ca88ac5745f64') in 0.064850 seconds
+  Import took 0.072803 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.206432 seconds.
+  path: Assets/Hazelwoodloft/Hard Surface
+  artifactKey: Guid(eee65e07d3baf644e8b52ebcdfbb16d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Hard Surface using Guid(eee65e07d3baf644e8b52ebcdfbb16d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81201aa77232e79e642ea16606f1cfaa') in 0.007452 seconds
+  Import took 0.013883 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.785125 seconds.
+  path: Assets/Hazelwoodloft/Hard Surface/HardSurface Shaders
+  artifactKey: Guid(2c69807bb2fd82949adf34c4ab8ee826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Hard Surface/HardSurface Shaders using Guid(2c69807bb2fd82949adf34c4ab8ee826) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55a772be3a90aca122b947de94ffe1cb') in 0.005841 seconds
+  Import took 0.014430 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.035886 seconds.
+  path: Assets/Hazelwoodloft/Standard Assets
+  artifactKey: Guid(d1f8321d5517c0f4e8ac2dc731a4b376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Standard Assets using Guid(d1f8321d5517c0f4e8ac2dc731a4b376) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e97f617f383df08f1bb01608d3b02e6d') in 0.006057 seconds
+  Import took 0.018739 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.613702 seconds.
+  path: Assets/Hazelwoodloft/Geometry/room_03_kitchen.fbx
+  artifactKey: Guid(360eda795c73da648ac6d03de6f39df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Hazelwoodloft/Geometry/room_03_kitchen.fbx using Guid(360eda795c73da648ac6d03de6f39df1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6ee5ac858fd5080a98e5c1f6e60aae8') in 0.730928 seconds
+  Import took 0.767304 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003802 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.937 seconds
+Platform modules already initialized, skipping
+Shader 'AngryBots/PlanarRealtimeReflection': fallback shader 'AngryBots/Fallback' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 3.02 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.33 ms.
+Unloading 3016 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 160.8 MB.
+System memory in use after: 161.0 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3803.
+Total: 11.419300 ms (FindLiveObjects: 0.599500 ms CreateObjectMapping: 0.494100 ms MarkObjects: 10.290100 ms  DeleteObjects: 0.033700 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 648.031262 seconds.
+  path: Assets/Phobiamend/New Timeline.playable
+  artifactKey: Guid(3de31073f5d8b1147b6d762d5ba09212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/New Timeline.playable using Guid(3de31073f5d8b1147b6d762d5ba09212) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '487680941b32f4b8fc2c58992f14c450') in 0.042620 seconds
+  Import took 0.052626 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 20.262061 seconds.
+  path: Assets/LivingRoomCGtrader
+  artifactKey: Guid(9e56cee3b243e2845888c09f08b4a269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader using Guid(9e56cee3b243e2845888c09f08b4a269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '106b6c0028c5ddb85bb5aea91986bb93') in 0.007252 seconds
+  Import took 0.014262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 187.869876 seconds.
+  path: Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx
+  artifactKey: Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx using Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c3b936b4c993b6f6ece583321310f07') in 1.170951 seconds
+  Import took 1.201199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.315153 seconds.
+  path: Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx
+  artifactKey: Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx using Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bae4d7de35ed4d7c41d5721d6cc68b1') in 0.757930 seconds
+  Import took 0.793454 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.693398 seconds.
+  path: Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx
+  artifactKey: Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx using Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ed9407e5239127d1e9f76cf63697602c') in 0.749837 seconds
+  Import took 0.791040 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 61410.818291 seconds.
+  path: Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx
+  artifactKey: Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx using Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5498b75c595b8b2c492a5601b411f85e') in 0.845094 seconds
+  Import took 0.965328 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1248.452288 seconds.
+  path: Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx
+  artifactKey: Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/uploads_files_2307641_couch.fbx using Guid(bf8164d826def7146848e718875d94a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0337abfd207bcc4e4403ba95c0bf8f78') in 0.610967 seconds
+  Import took 0.627966 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 404.927437 seconds.
+  path: Assets/LivingRoomCGtrader/Wood22_nrm.jpg
+  artifactKey: Guid(9377fea5531867f46bd14ec805554856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/Wood22_nrm.jpg using Guid(9377fea5531867f46bd14ec805554856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c0abbdd8af206397a6fcfb35640ad9') in 0.414994 seconds
+  Import took 0.425269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.776427 seconds.
+  path: Assets/LivingRoomCGtrader/Wood22_nrm.jpg
+  artifactKey: Guid(9377fea5531867f46bd14ec805554856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/Wood22_nrm.jpg using Guid(9377fea5531867f46bd14ec805554856) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8c0abbdd8af206397a6fcfb35640ad9') in 0.052969 seconds
+  Import took 0.060216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.610826 seconds.
+  path: Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image.jpg
+  artifactKey: Guid(fa0aebfdd3a28b14d95506f5fdd357e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image.jpg using Guid(fa0aebfdd3a28b14d95506f5fdd357e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c129ee9cc13602deca3a49e2e74743b') in 0.045045 seconds
+  Import took 0.062598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/LivingRoomCGtrader/116359.jpg
+  artifactKey: Guid(417cf8f460bc1874894ba22b9e297f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/116359.jpg using Guid(417cf8f460bc1874894ba22b9e297f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b55e958f7d5a34ffc36f3af3587e1b') in 0.030658 seconds
+  Import took 0.040087 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image.jpg
+  artifactKey: Guid(fa0aebfdd3a28b14d95506f5fdd357e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image.jpg using Guid(fa0aebfdd3a28b14d95506f5fdd357e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c129ee9cc13602deca3a49e2e74743b') in 0.017726 seconds
+  Import took 0.024158 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/LivingRoomCGtrader/116359.jpg
+  artifactKey: Guid(417cf8f460bc1874894ba22b9e297f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/116359.jpg using Guid(417cf8f460bc1874894ba22b9e297f75) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20b55e958f7d5a34ffc36f3af3587e1b') in 0.018999 seconds
+  Import took 0.026677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000158 seconds.
+  path: Assets/LivingRoomCGtrader/576659.jpg
+  artifactKey: Guid(c422890d53e24dc4d8644f9aae5d2398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/576659.jpg using Guid(c422890d53e24dc4d8644f9aae5d2398) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ccb9f993aee51e9a590695a5f589b41') in 0.023576 seconds
+  Import took 0.029948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/LivingRoomCGtrader/240433.jpg
+  artifactKey: Guid(7aeefdf6834b31d499cac1ada310f98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/240433.jpg using Guid(7aeefdf6834b31d499cac1ada310f98b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30e2a6d93a9eb0407b03460d50479f05') in 0.026409 seconds
+  Import took 0.032890 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 1.142876 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.24 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.608 seconds
+Platform modules already initialized, skipping
+Shader 'AngryBots/PlanarRealtimeReflection': fallback shader 'AngryBots/Fallback' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3035 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 162.0 MB.
+System memory in use after: 162.2 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3867.
+Total: 5.048300 ms (FindLiveObjects: 0.580000 ms CreateObjectMapping: 0.373300 ms MarkObjects: 4.059100 ms  DeleteObjects: 0.033200 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 848.416256 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox
+  artifactKey: Guid(8b3fd05c1f5d73c47abd3d2763a20204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox using Guid(8b3fd05c1f5d73c47abd3d2763a20204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd02051df1062184b97fa19777d6db81') in 0.014318 seconds
+  Import took 0.058070 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.135034 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies
+  artifactKey: Guid(9ec4b4792a4dac74794ecec6c4116af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies using Guid(9ec4b4792a4dac74794ecec6c4116af5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbb7a95f85d2571bcc1b84958a8b0254') in 0.005964 seconds
+  Import took 0.032789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.912864 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Materials
+  artifactKey: Guid(3ef7e70b7726a7649ad924e9c3ba8f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Materials using Guid(3ef7e70b7726a7649ad924e9c3ba8f2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbfb46d0c279c982e0a7415cd18819b8') in 0.019200 seconds
+  Import took 0.025353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.278633 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Textures
+  artifactKey: Guid(ae15f24fc2b41724fbd556d22bde10f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Textures using Guid(ae15f24fc2b41724fbd556d22bde10f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f288a7058645fb870f6d397d72ddf90') in 0.007847 seconds
+  Import took 0.017350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 14.002282 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo
+  artifactKey: Guid(033d362d60514534f8d3d33ccce4e301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo using Guid(033d362d60514534f8d3d33ccce4e301) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd05243f28f2bf1c726c6af0ac3d5874a') in 0.005675 seconds
+  Import took 0.013259 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.612104 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/03-Urban Zip Line.unity
+  artifactKey: Guid(e77fed9d6944a0e428b607a20df61ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/03-Urban Zip Line.unity using Guid(e77fed9d6944a0e428b607a20df61ce5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9ebfa9780ff5f0ed20000ad3dfa4130') in 0.015859 seconds
+  Import took 0.029318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 17.970078 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/02-Home sweet Home.unity
+  artifactKey: Guid(f1914fa32def3bf4393ebc4d7e8bba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/02-Home sweet Home.unity using Guid(f1914fa32def3bf4393ebc4d7e8bba59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eafb8706bbb2d0499fec8f1a2b47ceb5') in 0.031746 seconds
+  Import took 0.057109 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000562 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/04-Tellsplatte.unity
+  artifactKey: Guid(44c8c3e91a4586d40bb6e269bd4fd27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/04-Tellsplatte.unity using Guid(44c8c3e91a4586d40bb6e269bd4fd27d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e73632d57c80309c77adeec2eba79f43') in 0.024691 seconds
+  Import took 0.039327 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 72.091112 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/01-Snowy Bridge.unity
+  artifactKey: Guid(69d90fd370837cf4cb43939907a5a172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Swiss Freebies/Demo/01-Snowy Bridge.unity using Guid(69d90fd370837cf4cb43939907a5a172) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac39f9044b4b39554b329de988a038d4') in 0.007760 seconds
+  Import took 0.022067 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 29.144602 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Common
+  artifactKey: Guid(80cca5c663af07042bf02efc01bae590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Common using Guid(80cca5c663af07042bf02efc01bae590) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f122fa54b76f1309ad077072a46d139') in 0.007835 seconds
+  Import took 0.014366 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.735498 seconds.
+  path: Assets/Plugins/crosstales/3D Skybox/Common/Prefabs
+  artifactKey: Guid(c456d37e1a3618c47add4cff4b83ead2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales/3D Skybox/Common/Prefabs using Guid(c456d37e1a3618c47add4cff4b83ead2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94657742091353492473c2bb81f47bbd') in 0.028662 seconds
+  Import took 0.035246 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.581057 seconds.
+  path: Assets/Plugins/crosstales
+  artifactKey: Guid(88bbc9b92d6806e4cacc25ec6e3178e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Plugins/crosstales using Guid(88bbc9b92d6806e4cacc25ec6e3178e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec2fedf12c823188a28a57800c493931') in 0.010203 seconds
+  Import took 0.016045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.564126 seconds.
+  path: Assets/Phobiamend/Scenes/Acrophobia.unity
+  artifactKey: Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/Acrophobia.unity using Guid(ee64d2eaa88de2c4193d1408d73e63f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea8e11ce9c254f170e2506e437995522') in 0.024032 seconds
+  Import took 0.037129 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 52.860679 seconds.
+  path: Assets/Phobiamend/Scenes/Aracnophobia.unity
+  artifactKey: Guid(d79efbdc37849d141bc81f6f681ff31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/Aracnophobia.unity using Guid(d79efbdc37849d141bc81f6f681ff31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7980d6e9ada73b265a4309fbe5812fba') in 0.007331 seconds
+  Import took 0.043034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.905074 seconds.
+  path: Assets/TutorialInfo
+  artifactKey: Guid(49110bb8dcada46328ad741970bce702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TutorialInfo using Guid(49110bb8dcada46328ad741970bce702) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b730f4bcb53e42f2455cac6c6ee2ac') in 0.006981 seconds
+  Import took 0.032860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 567.504222 seconds.
+  path: Assets/Spiders
+  artifactKey: Guid(03a1af1a3d829c844b08b918d0e15163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders using Guid(03a1af1a3d829c844b08b918d0e15163) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef45c45a8493a9c84e34482407abcd86') in 0.008053 seconds
+  Import took 0.015751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.085022 seconds.
+  path: Assets/Spiders/model
+  artifactKey: Guid(d57bcb8ee652c5f4ea0be7f625a2c7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders/model using Guid(d57bcb8ee652c5f4ea0be7f625a2c7a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18d0f81f064a4a61dd40d1ffc8907798') in 0.006672 seconds
+  Import took 0.021486 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.828545 seconds.
+  path: Assets/Spiders/model/spider.fbx
+  artifactKey: Guid(7b12ff0838c1bfc46970414ffe81e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders/model/spider.fbx using Guid(7b12ff0838c1bfc46970414ffe81e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be9fbbbd4b88b087ac479019bf930bbb') in 0.217276 seconds
+  Import took 0.223092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.922871 seconds.
+  path: Assets/Spiders/model/Materials
+  artifactKey: Guid(4e529acf88daeca45aae7b64aa1908b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders/model/Materials using Guid(4e529acf88daeca45aae7b64aa1908b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1fea44ea304b17db3842cfbfec98f6') in 0.003037 seconds
+  Import took 0.008512 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.087808 seconds.
+  path: Assets/Spiders/model/spider.fbx
+  artifactKey: Guid(7b12ff0838c1bfc46970414ffe81e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders/model/spider.fbx using Guid(7b12ff0838c1bfc46970414ffe81e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6e10f9ea00c24eb1095edb40e6c28f') in 0.037408 seconds
+  Import took 0.089353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 23.341414 seconds.
+  path: Assets/Spiders/model/spider.fbx
+  artifactKey: Guid(7b12ff0838c1bfc46970414ffe81e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders/model/spider.fbx using Guid(7b12ff0838c1bfc46970414ffe81e813) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2716f6fe1ec872c3283f442dc944a38a') in 0.053692 seconds
+  Import took 0.062082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 34.607843 seconds.
+  path: Assets/Spiders/Materials
+  artifactKey: Guid(39ee86af897e7204488e9846f8d5a8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Spiders/Materials using Guid(39ee86af897e7204488e9846f8d5a8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1d3955261e3530c85cf716f3a88613e') in 0.002265 seconds
+  Import took 0.007895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4826.238277 seconds.
+  path: Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image 1.jpg
+  artifactKey: Guid(0e2ee8cc149f9484d99b4cd90a09be28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image 1.jpg using Guid(0e2ee8cc149f9484d99b4cd90a09be28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8220293b7a19dc5191470c5393f5b682') in 0.046348 seconds
+  Import took 0.058580 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/LivingRoomCGtrader/240433 1.jpg
+  artifactKey: Guid(0b33e87083b996046bc910553d7ecf86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/240433 1.jpg using Guid(0b33e87083b996046bc910553d7ecf86) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd8c97e2a69b3231079580dda181a3df') in 0.015237 seconds
+  Import took 0.038627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/LivingRoomCGtrader/116359 1.jpg
+  artifactKey: Guid(038cc5dd8dd0f0a40af1a1661b11715f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/116359 1.jpg using Guid(038cc5dd8dd0f0a40af1a1661b11715f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b466d5ab9946434b767da855f73146') in 0.056332 seconds
+  Import took 0.063364 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image 1.jpg
+  artifactKey: Guid(0e2ee8cc149f9484d99b4cd90a09be28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/35144_10650505_1969296_376a9d78_image 1.jpg using Guid(0e2ee8cc149f9484d99b4cd90a09be28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8220293b7a19dc5191470c5393f5b682') in 0.014753 seconds
+  Import took 0.021429 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/LivingRoomCGtrader/116359 1.jpg
+  artifactKey: Guid(038cc5dd8dd0f0a40af1a1661b11715f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/116359 1.jpg using Guid(038cc5dd8dd0f0a40af1a1661b11715f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2b466d5ab9946434b767da855f73146') in 0.016284 seconds
+  Import took 0.024750 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/LivingRoomCGtrader/576659 1.jpg
+  artifactKey: Guid(c1bfd84eef4b03a45be3405ea565768c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/LivingRoomCGtrader/576659 1.jpg using Guid(c1bfd84eef4b03a45be3405ea565768c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c3854dbf92b6b345c339a9c818b289e') in 0.015196 seconds
+  Import took 0.021598 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1314.852794 seconds.
+  path: Assets/Phobiamend/Scenes/PhobiamendHall.unity
+  artifactKey: Guid(f0439a2f8d9edf34d8f316cafcb47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/PhobiamendHall.unity using Guid(f0439a2f8d9edf34d8f316cafcb47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f74b403a3b268af37e889f2881fee84') in 0.021218 seconds
+  Import took 0.028089 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.143386 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.30 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  2.111 seconds
+Platform modules already initialized, skipping
+Shader 'AngryBots/PlanarRealtimeReflection': fallback shader 'AngryBots/Fallback' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.29 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 3035 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.2 MB.
+System memory in use after: 176.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3908.
+Total: 5.451800 ms (FindLiveObjects: 0.604800 ms CreateObjectMapping: 0.408300 ms MarkObjects: 4.290900 ms  DeleteObjects: 0.145800 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002251 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.162 seconds
+Platform modules already initialized, skipping
+Shader 'AngryBots/PlanarRealtimeReflection': fallback shader 'AngryBots/Fallback' not found
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 1.64 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 3035 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 176.2 MB.
+System memory in use after: 176.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3912.
+Total: 5.332000 ms (FindLiveObjects: 0.758500 ms CreateObjectMapping: 0.553600 ms MarkObjects: 3.993500 ms  DeleteObjects: 0.024600 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

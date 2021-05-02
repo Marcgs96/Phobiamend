@@ -45,7 +45,7 @@ public class GameSecuence : MonoBehaviour
     {
         if (active)
         {
-            currentTime -= Time.deltaTime;
+            currentTime += Time.deltaTime;
             var ts = TimeSpan.FromSeconds(currentTime);
             timeText.text = string.Format("{0:00}:{1:00}", ts.TotalMinutes, ts.Seconds);
             ringsCompletedText.text = (currentRing + 1).ToString() + "/" + rings.Count.ToString();
@@ -71,7 +71,7 @@ public class GameSecuence : MonoBehaviour
 
         rings[0].gameObject.SetActive(true);
 
-        currentTime = timeToComplete;
+        currentTime = 0;
         userInterface.SetActive(true);
         active = true;
 
@@ -87,7 +87,6 @@ public class GameSecuence : MonoBehaviour
 
     public void SetRingData(Ring ring, RingScriptableObject ringData)
     {
-        ring.movementType = ringData.movementType;
         ring.maxSize = ringData.size;
         ring.speed = ringData.speed;
         ring.mode = ringData.mode;
