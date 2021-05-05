@@ -4,19 +4,16 @@ using UnityEngine;
 
 public class TeleportManager : MonoBehaviour
 {
-    public Dictionary<int, TeleportZone> teleports;
+    public List<TeleportZone> teleports;
     public GameObject[] teleportGameObjects;
-    public int currentTeleportZone = 0;
-
     // Start is called before the first frame update
     void Start()
     {
-        teleports = new Dictionary<int, TeleportZone>();
-        teleportGameObjects = GameObject.FindGameObjectsWithTag("Teleport");
+        teleports = new List<TeleportZone>();
 
         foreach (GameObject item in teleportGameObjects)
         {
-            teleports.Add(item.GetComponent<TeleportZone>().id, item.GetComponent<TeleportZone>());
+            teleports.Add(item.GetComponent<TeleportZone>());
         }
 
         InitTeleports();
@@ -24,13 +21,13 @@ public class TeleportManager : MonoBehaviour
 
     void InitTeleports()
     {
-        foreach (KeyValuePair<int, TeleportZone> item in teleports)
+        foreach (TeleportZone item in teleports)
         {
-            item.Value.SetToOutState();
+            item.gameObject.SetActive(true);
+            item.SetToInState();
         }
 
-        currentTeleportZone = 0;
-        teleports[currentTeleportZone].SetToInState();
+        teleports[0].gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,28 +36,24 @@ public class TeleportManager : MonoBehaviour
         
     }
 
-    public void OnTeleport()
+    public void OnTeleport(int id)
     {
-        if (teleports[currentTeleportZone].state == TeleportZone.TELEPORT_STATE.HOVER)
+        foreach (TeleportZone item in teleports)
         {
-            teleports[currentTeleportZone].SetToNoneState();
-            if (currentTeleportZone < teleports.Count - 1)
-            {
-                currentTeleportZone++;
-                teleports[currentTeleportZone].SetToInState();
-            }
+            item.gameObject.SetActive(true);
+            item.SetToInState();
         }
+
+        teleports[id].gameObject.SetActive(false);
     }
 
     public void OnHover()
     {
-        if (teleports[currentTeleportZone].state == TeleportZone.TELEPORT_STATE.IN)
-            teleports[currentTeleportZone].SetToHoverState();
+
     }
 
     public void OnHoverExit()
     {
-        if (teleports[currentTeleportZone].state == TeleportZone.TELEPORT_STATE.HOVER)
-            teleports[currentTeleportZone].SetToInState();
+
     }
 }

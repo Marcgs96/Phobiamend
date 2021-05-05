@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabName: Ring
   size: 3
-  speed: 1
-  movementType: 6
+  speed: 0
   mode: 1

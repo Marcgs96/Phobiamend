@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
     {
         if(scene.name == "PhobiamendHall")
         {
-            transform.position = new Vector3(0, 0, 20);
+            transform.position = new Vector3(0, 0, 0);
         }
         else
         {
