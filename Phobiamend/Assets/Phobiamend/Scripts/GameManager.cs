@@ -8,10 +8,12 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public DelegateHandler delegateHandler;
     public AcrophobiaLevel acrophobiaLevel;
+    public AracnophobiaLevel aracnophobiaLevel;
 
     public GameObject player;
 
     public AcrophobiaLevelData acrophobiaLevelData;
+    public AracnophobiaLevelData aracnophobiaLevelData;
 
     private void Awake()
     {

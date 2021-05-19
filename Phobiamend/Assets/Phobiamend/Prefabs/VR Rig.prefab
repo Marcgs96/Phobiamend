@@ -962,6 +962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   delegateHandler: {fileID: 0}
   acrophobiaLevel: {fileID: 0}
+  aracnophobiaLevel: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &7463233818692147228
 MonoBehaviour:
