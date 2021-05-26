@@ -41,7 +41,7 @@ public class Spider : MonoBehaviour
         rbody = GetComponent<Rigidbody>();
         collider = GetComponent<BoxCollider>();
         anim = GetComponent<Animator>();
-        distanceText = transform.GetChild(2).gameObject;
+        distanceText = transform.GetChild(5).gameObject;
         distanceText.SetActive(false);
         rigidbody = GetComponent<Rigidbody>();
     }
