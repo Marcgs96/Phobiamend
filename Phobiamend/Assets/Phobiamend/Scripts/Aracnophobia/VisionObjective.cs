@@ -5,6 +5,8 @@ using DG.Tweening;
 
 public class VisionObjective : MonoBehaviour
 {
+
+    public Transform target;
     private void OnEnable()
     {
         DelegateHandler.targetObjective += ScaleTarget;
@@ -20,9 +22,13 @@ public class VisionObjective : MonoBehaviour
     void Update()
     {
         transform.LookAt(Camera.main.transform);
+        transform.position = new Vector3(Mathf.Lerp(transform.position.x, target.position.x, Time.deltaTime * 2.0f),
+                                         Mathf.Lerp(transform.position.y, target.position.y, Time.deltaTime * 2.0f),
+                                         Mathf.Lerp(transform.position.z, target.position.z, Time.deltaTime * 2.0f));
         if (DOTween.TweensById("scaleTarget") != null)
         {
-            transform.GetChild(0).GetComponent<TextMesh>().text = DOTween.TweensById("scaleTarget").ToArray()[0].Elapsed().ToString("F1");
+            float time = GameManager.instance.aracnophobiaLevel.levelData.timeToGrabSpider - DOTween.TweensById("scaleTarget").ToArray()[0].Elapsed();
+            transform.GetChild(0).GetComponent<TextMesh>().text = time.ToString("F1") + "s";
         }
     }
 
@@ -33,7 +39,7 @@ public class VisionObjective : MonoBehaviour
             DOTween.Play("scaleTarget");
         }
         else {
-            target.transform.DOScale(0.08f, 5.0f).SetId("scaleTarget").OnComplete(CompleteVisionTarget);
+            target.transform.DOScale(0.08f, GameManager.instance.aracnophobiaLevel.levelData.timeToGrabSpider).SetId("scaleTarget").OnComplete(CompleteVisionTarget);
         }
     }
 

@@ -45,6 +45,27 @@ public class GameManager : MonoBehaviour
        SceneManager.LoadScene(level);
     }
 
+    public void ExposureLevelUp(string level)
+    {
+        if (level == "Aracnophobia")
+        {
+            if (aracnophobiaLevelData.numberOfSpiders < 10)
+                aracnophobiaLevelData.numberOfSpiders++;
+            if (aracnophobiaLevelData.speedOfSpiders < 5)
+                aracnophobiaLevelData.speedOfSpiders++;
+            if (aracnophobiaLevelData.sizeOfSpiders < 1.0f)
+                aracnophobiaLevelData.sizeOfSpiders += 0.1f;
+            if (aracnophobiaLevelData.timeToGrabSpider < 5)
+            {
+                aracnophobiaLevelData.timeToGrabSpider++;
+                aracnophobiaLevelData.timeToObserveSpider++;
+            }
+        }
+
+        SceneManager.LoadScene(level);
+    }
+
+    //Acrophobia
     public void SetPlatformHeightData(float height)
     {
         acrophobiaLevelData.platformsHeight = (int)height;
@@ -75,6 +96,25 @@ public class GameManager : MonoBehaviour
         return acrophobiaLevelData.platformsTransparency;
     }
 
+    //Aracnophobia
+    public void SetNumberOfSpiders(float num)
+    {
+        aracnophobiaLevelData.numberOfSpiders = (int)num;
+    }
+
+    public void SetSpeedOfSpiders(float speed)
+    {
+        aracnophobiaLevelData.speedOfSpiders = (int)speed;
+    }
+    public void SetSizeofSpiders(float size)
+    {
+        aracnophobiaLevelData.sizeOfSpiders = size;
+    }
+    public void SetTimeOfEvents(float time)
+    {
+        aracnophobiaLevelData.timeToGrabSpider = (int)time;
+        aracnophobiaLevelData.timeToObserveSpider = (int)time;
+    }
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if(scene.name == "PhobiamendHall")
@@ -105,6 +145,12 @@ public class GameManager : MonoBehaviour
             acrophobiaLevel = gameObject.AddComponent<AcrophobiaLevel>();
             acrophobiaLevel.levelData = acrophobiaLevelData;
             acrophobiaLevel.gameSecuences = GameObject.Find("Level").GetComponent<AcrophobiaLevelContainer>().gameSecuences; //Contains the GameSecuences of the level.
+        }
+
+        if (level.Equals("Aracnophobia"))
+        {
+            aracnophobiaLevel = GameObject.Find("Level").GetComponent<AracnophobiaLevel>();
+            aracnophobiaLevel.levelData = aracnophobiaLevelData;
         }
     }
 

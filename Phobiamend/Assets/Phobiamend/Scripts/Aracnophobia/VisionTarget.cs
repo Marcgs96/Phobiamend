@@ -15,7 +15,6 @@ public class VisionTarget : MonoBehaviour
         // Does the ray intersect any objects excluding the player layer
         if (Physics.Raycast(transform.position, transform.TransformDirection(Vector3.forward), out hit, Mathf.Infinity, layerMask))
         {
-            Debug.Log("Hitted a vision objective");
             currentTargetedObjective = hit.collider.gameObject.GetComponent<VisionObjective>();
             GameManager.instance.delegateHandler.OnTargetObjective(currentTargetedObjective.gameObject);
         }

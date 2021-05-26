@@ -1,0 +1,403 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.1f1 (77a89f25062f) revision 7841951'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19042.985; Version 2009; 64bit' Language: 'es' Physical Memory: 16245 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.1f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+D:/Phobiamend/Phobiamend
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+49529
+Successfully changed project path to: D:/Phobiamend/Phobiamend
+D:/Phobiamend/Phobiamend
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 87.85 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.75 ms.
+Initialize engine version: 2020.3.1f1 (77a89f25062f)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/Phobiamend/Phobiamend/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 960 (ID=0x1401)
+    Vendor:   
+    VRAM:     4053 MB
+    Driver:   27.21.14.5730
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56956
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.1f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.004398 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 80.09 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.505 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002371 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 78.16 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+[XR] OculusXRPlugin: registering subsystems
+[XR] Unable to register display lifecyle provider: [1]
+[XR] Oculus Input lifecycle provider registered.
+[XR] Unable to register input lifecyle provider: [1]
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  3.712 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3280 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 168.6 MB.
+System memory in use after: 168.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 3749.
+Total: 3.820700 ms (FindLiveObjects: 0.474600 ms CreateObjectMapping: 0.392300 ms MarkObjects: 2.858300 ms  DeleteObjects: 0.094000 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Phobiamend/Scenes/Aracnophobia.unity
+  artifactKey: Guid(d79efbdc37849d141bc81f6f681ff31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/Aracnophobia.unity using Guid(d79efbdc37849d141bc81f6f681ff31d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671a581e5fedd2b5395ed9dd1cd32a1a') in 0.052840 seconds
+  Import took 0.062796 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.066586 seconds.
+  path: Assets/Phobiamend/Scripts/Aracnophobia/AracnophobiaLevel.cs
+  artifactKey: Guid(66dd39a9826acbf43b1593117b66d10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scripts/Aracnophobia/AracnophobiaLevel.cs using Guid(66dd39a9826acbf43b1593117b66d10e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e103650a2569d6d61c0bfb5136e8abf') in 0.053937 seconds
+  Import took 0.061045 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002401 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.123 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.86 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.1 MB.
+System memory in use after: 156.3 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3753.
+Total: 3.676500 ms (FindLiveObjects: 0.469100 ms CreateObjectMapping: 0.328700 ms MarkObjects: 2.849400 ms  DeleteObjects: 0.027300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003158 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.76 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  0.994 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.1 MB.
+System memory in use after: 156.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3757.
+Total: 3.447300 ms (FindLiveObjects: 0.462800 ms CreateObjectMapping: 0.337400 ms MarkObjects: 2.620000 ms  DeleteObjects: 0.025300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002581 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.001 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.82 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.2 MB.
+System memory in use after: 156.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3761.
+Total: 3.206500 ms (FindLiveObjects: 0.386200 ms CreateObjectMapping: 0.321200 ms MarkObjects: 2.477700 ms  DeleteObjects: 0.020300 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002436 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.91 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.004 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.06 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.2 MB.
+System memory in use after: 156.4 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3765.
+Total: 4.788300 ms (FindLiveObjects: 0.866400 ms CreateObjectMapping: 0.548700 ms MarkObjects: 3.350800 ms  DeleteObjects: 0.020900 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1890.394970 seconds.
+  path: Assets/Phobiamend/Prefabs/VR Rig.prefab
+  artifactKey: Guid(4f9c805e57492d34da6a2d6069bed2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Prefabs/VR Rig.prefab using Guid(4f9c805e57492d34da6a2d6069bed2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacf743d58a072e76263dd22b6465315') in 0.125370 seconds
+  Import took 0.132300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.002135 seconds.
+  path: Assets/Phobiamend/Prefabs/VR Rig.prefab
+  artifactKey: Guid(4f9c805e57492d34da6a2d6069bed2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Prefabs/VR Rig.prefab using Guid(4f9c805e57492d34da6a2d6069bed2c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dacf743d58a072e76263dd22b6465315') in 0.012167 seconds
+  Import took 0.020506 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002536 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.194 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.3 MB.
+System memory in use after: 156.5 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3770.
+Total: 4.647200 ms (FindLiveObjects: 0.548800 ms CreateObjectMapping: 0.643800 ms MarkObjects: 3.430300 ms  DeleteObjects: 0.022600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 355.900155 seconds.
+  path: Assets/Phobiamend/Scenes/PhobiamendHall.unity
+  artifactKey: Guid(f0439a2f8d9edf34d8f316cafcb47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/PhobiamendHall.unity using Guid(f0439a2f8d9edf34d8f316cafcb47605) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3539195eb005a2d26b423359a998ef08') in 0.040364 seconds
+  Import took 0.047285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 19.087038 seconds.
+  path: Assets/Phobiamend/Scenes/Aerophobia.unity
+  artifactKey: Guid(2bd2392257fc65e4792f015502b1d4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Scenes/Aerophobia.unity using Guid(2bd2392257fc65e4792f015502b1d4b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7efb0f1b5f3253f9e0197a90b959c656') in 0.007452 seconds
+  Import took 0.013952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 90.373915 seconds.
+  path: Assets/Phobiamend/Models/Textures
+  artifactKey: Guid(dccc80c6e44e3b14fb7dfb3185221e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Models/Textures using Guid(dccc80c6e44e3b14fb7dfb3185221e43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3629acab162af7af3a7296850689e9b') in 0.039096 seconds
+  Import took 0.045501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 74.747379 seconds.
+  path: Assets/Phobiamend/Models/uploads_files_943289_airplane+cabin.fbx
+  artifactKey: Guid(5ae1055e790966242ae7712bfe978a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Models/uploads_files_943289_airplane+cabin.fbx using Guid(5ae1055e790966242ae7712bfe978a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e20b5120b87e26cc42ee66d4f7006c79') in 1.820919 seconds
+  Import took 1.833317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.412781 seconds.
+  path: Assets/Phobiamend/Models/PlaneCabin.fbx
+  artifactKey: Guid(5ae1055e790966242ae7712bfe978a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Models/PlaneCabin.fbx using Guid(5ae1055e790966242ae7712bfe978a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3d5fe8a340693c371a32a242b8c90cf') in 0.971590 seconds
+  Import took 0.985945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 27.423618 seconds.
+  path: Assets/Phobiamend/Models/Textures/tex
+  artifactKey: Guid(0512b45bb32551c478dc02ad73276413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Models/Textures/tex using Guid(0512b45bb32551c478dc02ad73276413) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4ece36229c519bed5ddd91ca20f8c9d') in 0.007066 seconds
+  Import took 0.013282 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 243.648723 seconds.
+  path: Assets/Phobiamend/Models/PlaneCabin.fbx
+  artifactKey: Guid(5ae1055e790966242ae7712bfe978a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Models/PlaneCabin.fbx using Guid(5ae1055e790966242ae7712bfe978a24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15196d127a1c434d25bb9ead14de29ae') in 1.145355 seconds
+  Import took 1.161135 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1344.648215 seconds.
+  path: Assets/Phobiamend/Skybox
+  artifactKey: Guid(ac1fe1b07d15df04c82c98144ebc0225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Skybox using Guid(ac1fe1b07d15df04c82c98144ebc0225) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f058ceaf5193a5502b1d07a7b71fc588') in 0.010619 seconds
+  Import took 0.019520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.980063 seconds.
+  path: Assets/Phobiamend/Skybox/loc00184-22-8k.jpg
+  artifactKey: Guid(418dc8f6809014743bdbd74b4d09f847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Skybox/loc00184-22-8k.jpg using Guid(418dc8f6809014743bdbd74b4d09f847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2bf1fd084eaac8cf19da6ba3cf4c6e67') in 0.101998 seconds
+  Import took 0.120711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.970015 seconds.
+  path: Assets/Phobiamend/Skybox/loc00184-22-8k.jpg
+  artifactKey: Guid(418dc8f6809014743bdbd74b4d09f847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Skybox/loc00184-22-8k.jpg using Guid(418dc8f6809014743bdbd74b4d09f847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '984d60cd04f6fd41c4b73379f5ad086c') in 0.194223 seconds
+  Import took 0.204309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 87.358456 seconds.
+  path: Assets/Phobiamend/Skybox/AboveClouds.jpg
+  artifactKey: Guid(418dc8f6809014743bdbd74b4d09f847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Skybox/AboveClouds.jpg using Guid(418dc8f6809014743bdbd74b4d09f847) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ad05bcc4b611f05fae90e5057164ae4') in 0.064235 seconds
+  Import took 0.099145 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004221 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.96 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+NullReferenceException: Object reference not set to an instance of an object
+  at Unity.XR.Oculus.OculusLoader.AssetPathToAbsolutePath (System.String assetPath) [0x00048] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:243 
+  at Unity.XR.Oculus.OculusLoader.EditorLoadOVRPlugin () [0x0007b] in D:\Phobiamend\Phobiamend\Library\PackageCache\com.unity.xr.oculus@1.8.1\Runtime\OculusLoader.cs:228 
+
+(Filename: Library/PackageCache/com.unity.xr.oculus@1.8.1/Runtime/OculusLoader.cs Line: 243)
+
+Mono: successfully reloaded assembly
+- Completed reload, in  1.748 seconds
+Platform modules already initialized, skipping
+Shader 'Universal Render Pipeline/Particles/Lit': fallback shader 'Universal Render Pipeline/Particles/SimpleLit' not found
+Refreshing native plugins compatible for Editor in 0.85 ms, found 3 plugins.
+Preloading 1 native plugins for Editor in 0.14 ms.
+Unloading 3078 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 163.6 MB.
+System memory in use after: 163.8 MB.
+
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 3859.
+Total: 3.998100 ms (FindLiveObjects: 0.494800 ms CreateObjectMapping: 0.334300 ms MarkObjects: 3.121700 ms  DeleteObjects: 0.045600 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 6243.029260 seconds.
+  path: Assets/Phobiamend/Prefabs/Environment.prefab
+  artifactKey: Guid(ea908d725bc76ae44ba46d5f9730fe1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Prefabs/Environment.prefab using Guid(ea908d725bc76ae44ba46d5f9730fe1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f64734c15f97953e4eeb6ef4221da2d4') in 17.929819 seconds
+  Import took 18.205435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.149025 seconds.
+  path: Assets/Phobiamend/Prefabs/PlaneCabin.prefab
+  artifactKey: Guid(cff3007a01854ce46bd7139edfdb0722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Phobiamend/Prefabs/PlaneCabin.prefab using Guid(cff3007a01854ce46bd7139edfdb0722) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a94b54879c50964f6bd29f3e9afa95a8') in 0.245151 seconds
+  Import took 0.289924 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

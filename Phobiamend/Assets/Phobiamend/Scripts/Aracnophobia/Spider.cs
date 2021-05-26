@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spider : MonoBehaviour
 {
     public Transform movePosition;
-    Vector3 move = Vector3.zero;
     public bool isWandering = false;
     public bool isWalking = false;
     public bool isRotatingRight = false;
@@ -13,6 +12,13 @@ public class Spider : MonoBehaviour
     public float speed = 5.0f;
     public float rotSpeed = 5.0f;
     bool grabbed = false;
+    GameObject distanceText;
+    float distanceToPlayer = 0.0f;
+    Rigidbody rigidbody;
+    BoxCollider collider;
+
+    //spider close
+    float currentTimeClose;
 
     Rigidbody rbody;
     public enum SPIDER_STATE
@@ -28,8 +34,13 @@ public class Spider : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        currentTimeClose = GameManager.instance.aracnophobiaLevel.levelData.timeToGrabSpider;
         SetState(SPIDER_STATE.IDLE);
         rbody = GetComponent<Rigidbody>();
+        collider = GetComponent<BoxCollider>();
+        distanceText = transform.GetChild(2).gameObject;
+        distanceText.SetActive(false);
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -53,21 +64,6 @@ public class Spider : MonoBehaviour
         }
     }
 
-    void StartIdleState(SPIDER_STATE previousState)
-    {
-
-    }
-
-    void StartMoveState(SPIDER_STATE previousState)
-    {
-
-    }
-
-    void StartGrabbedState(SPIDER_STATE previousState)
-    {
-        isWandering = false;
-    }
-
     void UpdateIdleState()
     {
         UpdateWander();
@@ -82,7 +78,39 @@ public class Spider : MonoBehaviour
 
     void UpdateGrabbedState()
     {
+        distanceToPlayer = Vector3.Distance(transform.position, Camera.main.transform.position);
+        if (distanceToPlayer >= 0.5f)
+            distanceText.GetComponent<TextMesh>().text = "Acercame más!";
+        if (distanceToPlayer < 0.5f && distanceToPlayer  >= 0.35f)
+            distanceText.GetComponent<TextMesh>().text = "Acercame un poco más!";
+        if (distanceToPlayer < 0.35f)
+        {
+            currentTimeClose -= Time.deltaTime;
+            distanceText.GetComponent<TextMesh>().text = "Aquí! " + currentTimeClose.ToString("F1") + "s";
+            if(currentTimeClose <= 0.1f)
+            {
+                GameManager.instance.aracnophobiaLevel.aracnophobiaObjectives.CompleteObjective("SpiderClose");
+                Invoke("DisableDistanceText", 2.0f);
+            }
+        }
 
+        if (currentTimeClose <= 0.1f)
+            distanceText.GetComponent<TextMesh>().text = "Bien hecho!";
+
+        distanceText.transform.LookAt(Camera.main.transform, Vector3.up);
+    }
+
+    void DisableDistanceText()
+    {
+        distanceText.SetActive(false);
+    }
+
+    public void CheckIfDropSpiderComplete()
+    {
+        if (GameManager.instance.aracnophobiaLevel.aracnophobiaObjectives.FindObjectiveByName("SpiderClose").completed)
+        {
+            GameManager.instance.aracnophobiaLevel.aracnophobiaObjectives.CompleteObjective("SpiderDrop");
+        }
     }
 
     void UpdateWander()
@@ -99,6 +127,14 @@ public class Spider : MonoBehaviour
             transform.position += transform.forward * speed * Time.deltaTime;
     }
 
+    public void SpiderGrabbed()
+    {
+        distanceText.SetActive(true);
+        grabbed = true;
+        state = SPIDER_STATE.GRABBED;
+        GameManager.instance.aracnophobiaLevel.aracnophobiaObjectives.CompleteObjective("SpiderTake");
+    }
+
     public void SetState(SPIDER_STATE state)
     {
         switch (state)
@@ -106,13 +142,11 @@ public class Spider : MonoBehaviour
             case SPIDER_STATE.NONE:
                 break;
             case SPIDER_STATE.IDLE:
-                StartIdleState(this.state);
                 break;
             case SPIDER_STATE.MOVEMENT:
-                StartMoveState(this.state);
                 break;
             case SPIDER_STATE.GRABBED:
-                StartGrabbedState(this.state);
+                isWandering = false;
                 break;
             default:
                 break;
@@ -151,5 +185,29 @@ public class Spider : MonoBehaviour
         }
 
         isWandering = false;
+    }
+
+    public void SetAsGrabbed(bool set)
+    {
+        grabbed = set;
+    }
+
+    public void SetRigidBodyAsKinematic(bool set)
+    {
+        rigidbody.isKinematic = set;
+    }
+
+    public void SetColliderAsTrigger(bool set)
+    {
+        collider.isTrigger = set;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (!grabbed)
+        {
+            SetRigidBodyAsKinematic(true);
+            SetColliderAsTrigger(true);
+        }
     }
 }

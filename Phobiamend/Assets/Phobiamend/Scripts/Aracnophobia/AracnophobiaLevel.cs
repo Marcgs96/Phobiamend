@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public struct AracnophobiaScore
+{
+    public int objectivesScore;
+    public float timeScore;
+    public float dificultySMultiplier;
+    public float totalScore;
+}
+
 public struct AracnophobiaLevelData
 {
     public int numberOfSpiders;
@@ -13,43 +21,59 @@ public struct AracnophobiaLevelData
 
 public class AracnophobiaLevel : MonoBehaviour
 {
-    AracnophobiaLevelData levelData;
+    public AracnophobiaLevelData levelData;
     public Transform spiderMovePoints;
     public List<Spider> spiders;
     public GameObject spiderPrefab;
     public Transform spawnPosition;
     public ObjectiveManager aracnophobiaObjectives;
     public GameObject visionObjectivePrefab;
+    public Transform playerSpawnPosition;
+    public Transform cameraUIOffset;
+
+    //scores
+    AracnophobiaScore scores;
+    float highestTimeScore = 520.0f;
+    float timeScoreTimer = 520.0f;
 
     void Start()
     {
-        levelData.numberOfSpiders = 5;
         InitLevel();
+        SetSpidersData();
+    }
+
+    private void FixedUpdate()
+    {
+        if(timeScoreTimer > 0.0f)
+            timeScoreTimer -= Time.deltaTime;
     }
 
     private void OnEnable()
     {
         DelegateHandler.objective += OnObjectiveCompleted;
+        DelegateHandler.objectives += EndLevel;
     }
 
     void OnObjectiveCompleted(int id)
     {
         switch (id)
         {
-            case 1:
-                FindSpiderObjective();
+            case 1: FindSpiderObjective();
                 break;
             case 2: EnableGrabSpiders();
                 break;
             default:
                 break;
         }
+
+        scores.objectivesScore += 500;
     }
 
     void FindSpiderObjective()
     {
         int rand = Random.Range(0, spiders.Count - 1);
-        Instantiate(visionObjectivePrefab, spiders[rand].transform.position, spiders[rand].transform.rotation);
+        GameObject target = Instantiate(visionObjectivePrefab, cameraUIOffset.position, cameraUIOffset.rotation);
+        target.GetComponent<VisionObjective>().target = spiders[rand].transform;
     }
 
     void EnableGrabSpiders()
@@ -62,10 +86,27 @@ public class AracnophobiaLevel : MonoBehaviour
 
     void InitLevel()
     {
+        playerSpawnPosition = GameObject.Find("PlayerSpawn").transform;
+        GameManager.instance.player.transform.position = playerSpawnPosition.transform.position;
+        aracnophobiaObjectives = GameObject.Find("Level").GetComponent<ObjectiveManager>();
+        cameraUIOffset = Camera.main.transform.GetChild(1);
+        spiderMovePoints = GameObject.Find("SpidersMovePoints").transform;
+        spawnPosition = GameObject.Find("SpidersSpawnPoint").transform;
+
         for(int i = 0; i < levelData.numberOfSpiders; ++i){
             spiders.Add(Instantiate(spiderPrefab, spawnPosition.position + new Vector3(Random.Range(-0.1f, 0.1f), 0.0f, Random.Range(-0.1f, 0.2f)), Quaternion.Euler(0.0f, Random.rotation.eulerAngles.y, 0.0f)).GetComponent<Spider>());
             spiders[i].movePosition = spiderMovePoints.GetChild(i);
             spiders[i].GetComponent<BoxCollider>().enabled = false;
+        }
+    }
+
+    void SetSpidersData()
+    {
+        foreach (var spider in spiders)
+        {
+            spider.speed = levelData.speedOfSpiders;
+            spider.transform.localScale = new Vector3(levelData.sizeOfSpiders, levelData.sizeOfSpiders, levelData.sizeOfSpiders);
+            
         }
     }
 
@@ -89,5 +130,14 @@ public class AracnophobiaLevel : MonoBehaviour
     private void OnDisable()
     {
         DelegateHandler.objective -= OnObjectiveCompleted;
+        DelegateHandler.objectives -= EndLevel;
+    }
+
+    public void EndLevel()
+    {
+        scores.timeScore = timeScoreTimer;
+        scores.dificultySMultiplier = (levelData.numberOfSpiders + levelData.sizeOfSpiders + levelData.speedOfSpiders + levelData.timeToGrabSpider) / 4.0f;
+        scores.totalScore = scores.objectivesScore + scores.timeScore * scores.dificultySMultiplier;
+        aracnophobiaObjectives.SetScores(scores);
     }
 }

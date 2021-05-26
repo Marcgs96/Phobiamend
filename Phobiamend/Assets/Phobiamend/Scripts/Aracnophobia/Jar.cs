@@ -41,7 +41,6 @@ public class Jar : MonoBehaviour
     {
         jarPosition.SetActive(false);
         GameManager.instance.aracnophobiaLevel.aracnophobiaObjectives.CompleteObjective("JarDrop");
-        GetComponent<XROffsetGrabbable>().enabled = false;
         enabled = false;
     }
 

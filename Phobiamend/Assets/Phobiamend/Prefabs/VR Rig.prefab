@@ -218,6 +218,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83e4e6cca11330d4088d729ab4fc9d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7135482191786248682
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6113198731542908944}
+  m_Layer: 0
+  m_Name: CameraUIOffset
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6113198731542908944
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7135482191786248682}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8793034769068387930}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8793034767426100480
 GameObject:
   m_ObjectHideFlags: 0
@@ -347,7 +377,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8793034767684743246
 GameObject:
@@ -512,7 +542,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8793034767930341755
 GameObject:
@@ -571,7 +601,7 @@ MonoBehaviour:
   m_AnchorControlDeadzone: 0.75
   m_AnchorControlOffAxisDeadzone: 0.3
   m_ControllerNode: 5
-  m_SelectUsage: 6
+  m_SelectUsage: 3
   m_ActivateUsage: 3
   m_UIPressUsage: 6
   m_AxisToPressThreshold: 0.2
@@ -989,7 +1019,7 @@ GameObject:
   - component: {fileID: 8793034769068387932}
   - component: {fileID: 8793034769068387935}
   - component: {fileID: 8793034769068387934}
-  - component: {fileID: 1642794401227798913}
+  - component: {fileID: 1014792566110781746}
   m_Layer: 0
   m_Name: VR Camera
   m_TagString: MainCamera
@@ -1009,6 +1039,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 576356019}
+  - {fileID: 6113198731542908944}
   m_Father: {fileID: 8793034767684743247}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1114,7 +1145,7 @@ MonoBehaviour:
   m_TrackingType: 0
   m_UpdateType: 0
   m_UseRelativeTransform: 0
---- !u!114 &1642794401227798913
+--- !u!114 &1014792566110781746
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1123,58 +1154,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8793034769068387921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf080b72748b57f4a9c9916788961d0e, type: 3}
+  m_Script: {fileID: 11500000, guid: a6cdd201376df08499eb224860692c3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motionTarget: {fileID: 8793034767684743247}
-  effectColor: {r: 0, g: 0, b: 0, a: 1}
-  effectCoverage: 0.75
-  effectFeather: 0.1
-  effectSkybox: {fileID: 0}
-  applyColorToBackground: 0
-  useAngularVelocity: 1
-  angularVelocityStrength: 1
-  angularVelocityMin: 0
-  angularVelocityMax: 180
-  angularVelocitySmoothing: 0.15
-  useAcceleration: 0
-  accelerationStrength: 1
-  accelerationMin: 0
-  accelerationMax: 0
-  accelerationSmoothing: 0.15
-  useVelocity: 0
-  velocityStrength: 1
-  velocityMin: 0
-  velocityMax: 0
-  velocitySmoothing: 0.15
-  motionEffectTarget: {fileID: 0}
-  useCounterMotion: 0
-  counterRotationStrength: 1
-  counterRotationPerAxis: {x: 0, y: 1, z: 0}
-  useArtificialTilt: 0
-  tiltStrength: 0
-  tiltMaxAngles: {x: 5, y: 5}
-  tiltSmoothTime: 0
-  framerateDivision: 1
-  divideTranslation: 1
-  divideRotation: 1
-  backgroundMode: 0
-  effectOverlay: 0
-  _cageParent: {fileID: 0}
-  cageDownsample: 0
-  cageAntiAliasing: 0
-  cageUpdateEveryFrame: 0
-  cageFogDensity: 0.01
-  cageFogPower: 2
-  cageFogBlend: 1
-  maskMode: 0
-  blurDownsample: 3
-  blurDistance: 3
-  blurPasses: 3
-  blurSamples: 0
-  irisZRejection: 1
-  counterVelocityMode: 0
-  counterVelocityResetDistance: 0
-  counterVelocityResetTime: 0
-  counterVelocityStrength: 1
-  counterVelocityPerAxis: {x: 1, y: 1, z: 1}
+  currentTargetedObjective: {fileID: 0}

@@ -12,6 +12,7 @@ public class DelegateHandler : MonoBehaviour
     public delegate void TargetedSpider(GameObject spider);
     public delegate void DeTargetedSpider();
     public delegate void ObjectiveComplete(int id);
+    public delegate void ObjectivesComplete();
 
     public static event RingCompleted ringCompleted;
     public static event SecuenceCompleted secuenceCompleted;
@@ -21,6 +22,7 @@ public class DelegateHandler : MonoBehaviour
     public static event TargetedSpider targetObjective;
     public static event DeTargetedSpider deTargetObjective;
     public static event ObjectiveComplete objective;
+    public static event ObjectivesComplete objectives;
 
     public void OnRingCompleted()
     {
@@ -56,5 +58,9 @@ public class DelegateHandler : MonoBehaviour
     public void OnObjectiveComplete(int id)
     {
         objective(id);
+    }
+    public void OnAllObjectivesComplete()
+    {
+        objectives();
     }
 }

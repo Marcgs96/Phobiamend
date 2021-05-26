@@ -10,14 +10,23 @@ public class ObjectiveManager : MonoBehaviour
     int currentObjective = 0;
     public GameObject objectivePanel;
     public GameObject objectiveUI;
+    public GameObject scoreboardPanel;
+    public GameObject buttonsPanel;
 
     private void Start()
     {
+        objectivePanel = GameObject.Find("ObjectivesPanel");
+        scoreboardPanel = GameObject.Find("ScoreBoardPanel");
+        scoreboardPanel.SetActive(false);
+        buttonsPanel = GameObject.Find("ButtonsPanel");
+        buttonsPanel.SetActive(false);
+
         for (int i = 0; i < objectives.Length; ++i)
         {
             GameObject newObjectiveUI = Instantiate(objectiveUI, objectivePanel.transform);
             newObjectiveUI.GetComponent<Text>().text = (objectives[i].id + 1).ToString() + ". " + objectives[i].description;
             newObjectiveUI.transform.GetChild(0).gameObject.SetActive(false);
+            objectives[i].completed = false;
         }
     }
 
@@ -50,6 +59,42 @@ public class ObjectiveManager : MonoBehaviour
 
     public void CompleteObjective(string name)
     {
-        GameManager.instance.delegateHandler.OnObjectiveComplete(FindObjectiveByName(name).id);
+        if (!FindObjectiveByName(name).completed)
+        {
+            FindObjectiveByName(name).completed = true;
+            GameManager.instance.delegateHandler.OnObjectiveComplete(FindObjectiveByName(name).id);
+        }
+
+        if (CheckAllObjectiesCompleted())
+        {
+            ShowScoreboard();
+            GameManager.instance.delegateHandler.OnAllObjectivesComplete();
+        }
+    }
+
+    void ShowScoreboard()
+    {
+        objectivePanel.SetActive(false);
+        scoreboardPanel.SetActive(true);
+        buttonsPanel.SetActive(true);
+    }
+
+    public void SetScores(AracnophobiaScore scores)
+    {
+        scoreboardPanel.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = scores.objectivesScore.ToString();
+        scoreboardPanel.transform.GetChild(1).GetChild(0).GetComponent<Text>().text = scores.timeScore.ToString("F1");
+        scoreboardPanel.transform.GetChild(2).GetChild(0).GetComponent<Text>().text = scores.dificultySMultiplier.ToString("F1");
+        scoreboardPanel.transform.GetChild(3).GetChild(0).GetComponent<Text>().text = scores.totalScore.ToString("F1");
+    }
+
+    bool CheckAllObjectiesCompleted()
+    {
+        foreach (var item in objectives)
+        {
+            if (!item.completed)
+                return false;
+        }
+
+        return true;
     }
 }

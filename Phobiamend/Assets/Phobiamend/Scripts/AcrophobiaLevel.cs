@@ -11,6 +11,7 @@ public struct AcrophobiaLevelData
     public int platformsHeight;
     public float platformsTransparency;
 }
+
 public class AcrophobiaLevel : MonoBehaviour
 {
     public List<GameSecuence> gameSecuences;
