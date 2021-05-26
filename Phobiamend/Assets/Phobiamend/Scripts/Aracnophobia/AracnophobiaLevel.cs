@@ -15,8 +15,8 @@ public struct AracnophobiaLevelData
     public int numberOfSpiders;
     public int speedOfSpiders;
     public float sizeOfSpiders;
-    public float timeToObserveSpider;
-    public float timeToGrabSpider;
+    public int timeToObserveSpider;
+    public int timeToGrabSpider;
 }
 
 public class AracnophobiaLevel : MonoBehaviour
@@ -104,9 +104,8 @@ public class AracnophobiaLevel : MonoBehaviour
     {
         foreach (var spider in spiders)
         {
-            spider.speed = levelData.speedOfSpiders;
-            spider.transform.localScale = new Vector3(levelData.sizeOfSpiders, levelData.sizeOfSpiders, levelData.sizeOfSpiders);
-            
+            spider.maxSpeed = levelData.speedOfSpiders;
+            spider.transform.localScale = new Vector3(levelData.sizeOfSpiders, levelData.sizeOfSpiders, levelData.sizeOfSpiders);        
         }
     }
 

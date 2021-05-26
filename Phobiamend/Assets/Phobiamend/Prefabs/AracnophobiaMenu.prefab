@@ -2354,7 +2354,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 7887886424682247409}
         m_TargetAssemblyTypeName: UpdateSliderTextValue, Assembly-CSharp
-        m_MethodName: UpdateTextValue
+        m_MethodName: UpdateTextValueF1
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2916,7 +2916,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tiempo de los eventos
+  m_Text: "Duraci\xF3n de los eventos"
 --- !u!1 &8903283829164827782
 GameObject:
   m_ObjectHideFlags: 0

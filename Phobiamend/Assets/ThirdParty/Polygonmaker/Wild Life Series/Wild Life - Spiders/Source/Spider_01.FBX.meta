@@ -1,0 +1,699 @@
+fileFormatVersion: 2
+guid: b24b3f8b1275b22488627bfd1c936351
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Black_Widow_1_LOD0
+  - first:
+      1: 100002
+    second: Black_Widow_1_LOD1
+  - first:
+      1: 100004
+    second: Black_Widow_1_LOD2
+  - first:
+      1: 100006
+    second: Black_Widow_1_LOD3
+  - first:
+      1: 100008
+    second: //RootNode
+  - first:
+      1: 100010
+    second: Spider_back
+  - first:
+      1: 100012
+    second: SpiderArmL1
+  - first:
+      1: 100014
+    second: SpiderArmL2
+  - first:
+      1: 100016
+    second: SpiderArmR1
+  - first:
+      1: 100018
+    second: SpiderArmR2
+  - first:
+      1: 100020
+    second: SpiderHub
+  - first:
+      1: 100022
+    second: SpiderJawL
+  - first:
+      1: 100024
+    second: SpiderJawR
+  - first:
+      1: 100026
+    second: SpiderLLeg11
+  - first:
+      1: 100028
+    second: SpiderLLeg12
+  - first:
+      1: 100030
+    second: SpiderLLeg13
+  - first:
+      1: 100032
+    second: SpiderLLeg1Ankle
+  - first:
+      1: 100034
+    second: SpiderLLeg21
+  - first:
+      1: 100036
+    second: SpiderLLeg22
+  - first:
+      1: 100038
+    second: SpiderLLeg23
+  - first:
+      1: 100040
+    second: SpiderLLeg2Ankle
+  - first:
+      1: 100042
+    second: SpiderLLeg31
+  - first:
+      1: 100044
+    second: SpiderLLeg32
+  - first:
+      1: 100046
+    second: SpiderLLeg33
+  - first:
+      1: 100048
+    second: SpiderLLeg3Ankle
+  - first:
+      1: 100050
+    second: SpiderLLeg41
+  - first:
+      1: 100052
+    second: SpiderLLeg42
+  - first:
+      1: 100054
+    second: SpiderLLeg43
+  - first:
+      1: 100056
+    second: SpiderLLeg4Ankle
+  - first:
+      1: 100058
+    second: SpiderRLeg11
+  - first:
+      1: 100060
+    second: SpiderRLeg12
+  - first:
+      1: 100062
+    second: SpiderRLeg13
+  - first:
+      1: 100064
+    second: SpiderRLeg1Ankle
+  - first:
+      1: 100066
+    second: SpiderRLeg21
+  - first:
+      1: 100068
+    second: SpiderRLeg22
+  - first:
+      1: 100070
+    second: SpiderRLeg23
+  - first:
+      1: 100072
+    second: SpiderRLeg2Ankle
+  - first:
+      1: 100074
+    second: SpiderRLeg31
+  - first:
+      1: 100076
+    second: SpiderRLeg32
+  - first:
+      1: 100078
+    second: SpiderRLeg33
+  - first:
+      1: 100080
+    second: SpiderRLeg3Ankle
+  - first:
+      1: 100082
+    second: SpiderRLeg41
+  - first:
+      1: 100084
+    second: SpiderRLeg42
+  - first:
+      1: 100086
+    second: SpiderRLeg43
+  - first:
+      1: 100088
+    second: SpiderRLeg4Ankle
+  - first:
+      1: 100090
+    second: Spider_1_LOD0
+  - first:
+      1: 100092
+    second: Spider_1_LOD1
+  - first:
+      1: 100094
+    second: Spider_1_LOD2
+  - first:
+      1: 100096
+    second: Spider_1_LOD3
+  - first:
+      1: 100098
+    second: root
+  - first:
+      4: 400000
+    second: Black_Widow_1_LOD0
+  - first:
+      4: 400002
+    second: Black_Widow_1_LOD1
+  - first:
+      4: 400004
+    second: Black_Widow_1_LOD2
+  - first:
+      4: 400006
+    second: Black_Widow_1_LOD3
+  - first:
+      4: 400008
+    second: //RootNode
+  - first:
+      4: 400010
+    second: Spider_back
+  - first:
+      4: 400012
+    second: SpiderArmL1
+  - first:
+      4: 400014
+    second: SpiderArmL2
+  - first:
+      4: 400016
+    second: SpiderArmR1
+  - first:
+      4: 400018
+    second: SpiderArmR2
+  - first:
+      4: 400020
+    second: SpiderHub
+  - first:
+      4: 400022
+    second: SpiderJawL
+  - first:
+      4: 400024
+    second: SpiderJawR
+  - first:
+      4: 400026
+    second: SpiderLLeg11
+  - first:
+      4: 400028
+    second: SpiderLLeg12
+  - first:
+      4: 400030
+    second: SpiderLLeg13
+  - first:
+      4: 400032
+    second: SpiderLLeg1Ankle
+  - first:
+      4: 400034
+    second: SpiderLLeg21
+  - first:
+      4: 400036
+    second: SpiderLLeg22
+  - first:
+      4: 400038
+    second: SpiderLLeg23
+  - first:
+      4: 400040
+    second: SpiderLLeg2Ankle
+  - first:
+      4: 400042
+    second: SpiderLLeg31
+  - first:
+      4: 400044
+    second: SpiderLLeg32
+  - first:
+      4: 400046
+    second: SpiderLLeg33
+  - first:
+      4: 400048
+    second: SpiderLLeg3Ankle
+  - first:
+      4: 400050
+    second: SpiderLLeg41
+  - first:
+      4: 400052
+    second: SpiderLLeg42
+  - first:
+      4: 400054
+    second: SpiderLLeg43
+  - first:
+      4: 400056
+    second: SpiderLLeg4Ankle
+  - first:
+      4: 400058
+    second: SpiderRLeg11
+  - first:
+      4: 400060
+    second: SpiderRLeg12
+  - first:
+      4: 400062
+    second: SpiderRLeg13
+  - first:
+      4: 400064
+    second: SpiderRLeg1Ankle
+  - first:
+      4: 400066
+    second: SpiderRLeg21
+  - first:
+      4: 400068
+    second: SpiderRLeg22
+  - first:
+      4: 400070
+    second: SpiderRLeg23
+  - first:
+      4: 400072
+    second: SpiderRLeg2Ankle
+  - first:
+      4: 400074
+    second: SpiderRLeg31
+  - first:
+      4: 400076
+    second: SpiderRLeg32
+  - first:
+      4: 400078
+    second: SpiderRLeg33
+  - first:
+      4: 400080
+    second: SpiderRLeg3Ankle
+  - first:
+      4: 400082
+    second: SpiderRLeg41
+  - first:
+      4: 400084
+    second: SpiderRLeg42
+  - first:
+      4: 400086
+    second: SpiderRLeg43
+  - first:
+      4: 400088
+    second: SpiderRLeg4Ankle
+  - first:
+      4: 400090
+    second: Spider_1_LOD0
+  - first:
+      4: 400092
+    second: Spider_1_LOD1
+  - first:
+      4: 400094
+    second: Spider_1_LOD2
+  - first:
+      4: 400096
+    second: Spider_1_LOD3
+  - first:
+      4: 400098
+    second: root
+  - first:
+      21: 2100000
+    second: Black_Widow_1_01
+  - first:
+      21: 2100002
+    second: Unwrap Texture Checker Material
+  - first:
+      43: 4300000
+    second: Black_Widow_1_LOD0
+  - first:
+      43: 4300002
+    second: Black_Widow_1_LOD1
+  - first:
+      43: 4300004
+    second: Black_Widow_1_LOD2
+  - first:
+      43: 4300006
+    second: Black_Widow_1_LOD3
+  - first:
+      43: 4300008
+    second: Spider_1_LOD0
+  - first:
+      43: 4300010
+    second: Spider_1_LOD1
+  - first:
+      43: 4300012
+    second: Spider_1_LOD2
+  - first:
+      43: 4300014
+    second: Spider_1_LOD3
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Black_Widow_1_LOD0
+  - first:
+      137: 13700002
+    second: Black_Widow_1_LOD1
+  - first:
+      137: 13700004
+    second: Black_Widow_1_LOD2
+  - first:
+      137: 13700006
+    second: Black_Widow_1_LOD3
+  - first:
+      137: 13700008
+    second: Spider_1_LOD0
+  - first:
+      137: 13700010
+    second: Spider_1_LOD1
+  - first:
+      137: 13700012
+    second: Spider_1_LOD2
+  - first:
+      137: 13700014
+    second: Spider_1_LOD3
+  - first:
+      205: 20500000
+    second: //RootNode
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Black_Widow_1_01
+    second: {fileID: 2100000, guid: 0c1f836ef365de042b2c7b7d507d2c49, type: 2}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Spider_01(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Black_Widow_1_LOD0
+      parentName: Spider_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Black_Widow_1_LOD1
+      parentName: Spider_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Black_Widow_1_LOD2
+      parentName: Spider_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Black_Widow_1_LOD3
+      parentName: Spider_01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SpiderHub
+      parentName: Spider_01(Clone)
+      position: {x: 4.4703487e-11, y: 0.004300111, z: 0.00081093016}
+      rotation: {x: 0.49999994, y: -0.49999982, z: -0.50000006, w: 0.50000024}
+      scale: {x: 1, y: 1, z: 1}
+    - name: SpiderJawR
+      parentName: SpiderHub
+      position: {x: 0.000044043347, y: 0.0006164193, z: -0.00015806807}
+      rotation: {x: -0.050519444, y: 0.1807113, z: 0.81159467, w: -0.55326796}
+      scale: {x: 1.0000031, y: 1.0000062, z: 1.0000018}
+    - name: SpiderRLeg11
+      parentName: SpiderHub
+      position: {x: 0.00042832334, y: 0.00027032217, z: -0.00032290636}
+      rotation: {x: -0.89031905, y: 0.37849486, z: -0.25263724, w: 0.01575479}
+      scale: {x: 1.0000024, y: 1.0000029, z: 1.0000031}
+    - name: SpiderRLeg12
+      parentName: SpiderRLeg11
+      position: {x: -0.0028503581, y: -0.000000001883507, z: -5.9604643e-10}
+      rotation: {x: -0.18241811, y: -0.04322959, z: 0.33692822, w: 0.92267776}
+      scale: {x: 1.0000038, y: 0.9999987, z: 1.0000027}
+    - name: SpiderRLeg13
+      parentName: SpiderRLeg12
+      position: {x: -0.0024106314, y: 0.0000000019073485, z: -0.0000000012397766}
+      rotation: {x: -0.01163519, y: 0.013409913, z: 0.39548993, w: 0.9182987}
+      scale: {x: 1.0000005, y: 0.9999999, z: 1.000002}
+    - name: SpiderRLeg1Ankle
+      parentName: SpiderRLeg13
+      position: {x: -0.0023788635, y: 0, z: 9.536743e-11}
+      rotation: {x: 0.0052817166, y: -0.00051531196, z: 0.040788233, w: 0.99915373}
+      scale: {x: 0.9999935, y: 1.0000098, z: 1.0000006}
+    - name: SpiderLLeg11
+      parentName: SpiderHub
+      position: {x: 0.00042832328, y: 0.00027032217, z: 0.00032290607}
+      rotation: {x: -0.89030135, y: 0.37849528, z: 0.25270724, w: -0.01561673}
+      scale: {x: 0.9999994, y: 1.0000005, z: 1.0000008}
+    - name: SpiderLLeg12
+      parentName: SpiderLLeg11
+      position: {x: -0.00285036, y: -0.0000000010967253, z: 0.000000001168251}
+      rotation: {x: 0.1823101, y: 0.043429956, z: 0.33692563, w: 0.92269063}
+      scale: {x: 1.0000021, y: 0.9999984, z: 0.9999999}
+    - name: SpiderLLeg13
+      parentName: SpiderLLeg12
+      position: {x: -0.0024106335, y: 9.536743e-10, z: 0.0000000014305116}
+      rotation: {x: 0.011445685, y: -0.013413758, z: 0.39551497, w: 0.91829026}
+      scale: {x: 1.000004, y: 0.9999993, z: 1.0000012}
+    - name: SpiderLLeg1Ankle
+      parentName: SpiderLLeg13
+      position: {x: -0.002378864, y: 0, z: -9.536743e-11}
+      rotation: {x: -0.005126719, y: 0.00015431269, z: 0.0406538, w: 0.9991602}
+      scale: {x: 1.0000098, y: 0.9999938, z: 1.000004}
+    - name: Spider_back
+      parentName: SpiderHub
+      position: {x: 7.6293943e-10, y: -0.00060182845, z: 0.0000056990434}
+      rotation: {x: -0.000000119209275, y: -0.000000059604638, z: 0.72222465, w: 0.69165856}
+      scale: {x: 1.0000031, y: 1.0000004, z: 1.0000025}
+    - name: SpiderJawL
+      parentName: SpiderHub
+      position: {x: 0.000044043347, y: 0.00061642035, z: 0.00015806807}
+      rotation: {x: -0.05051898, y: 0.18071094, z: -0.8115946, w: 0.5532681}
+      scale: {x: 1.0000002, y: 1.0000007, z: 0.9999998}
+    - name: SpiderLLeg41
+      parentName: SpiderHub
+      position: {x: 0.00034358568, y: -0.00031781622, z: 0.0003908151}
+      rotation: {x: -0.24519368, y: 0.25865436, z: 0.45170665, w: 0.81788707}
+      scale: {x: 1.0000024, y: 0.99999964, z: 1.0000005}
+    - name: SpiderLLeg42
+      parentName: SpiderLLeg41
+      position: {x: -0.0021773605, y: -7.390975e-10, z: -0.000000001358986}
+      rotation: {x: -0.008901296, y: -0.107782885, z: 0.27842045, w: 0.9543509}
+      scale: {x: 0.99999726, y: 1.0000054, z: 0.9999988}
+    - name: SpiderLLeg43
+      parentName: SpiderLLeg42
+      position: {x: -0.0023214128, y: 0, z: -4.7683715e-11}
+      rotation: {x: 0.041357506, y: -0.046117514, z: 0.32088283, w: 0.945091}
+      scale: {x: 0.99999297, y: 1.0000051, z: 1.0000051}
+    - name: SpiderLLeg4Ankle
+      parentName: SpiderLLeg43
+      position: {x: -0.0018230901, y: 0, z: -4.7683715e-11}
+      rotation: {x: -0.028032515, y: 0.06294749, z: -0.0394849, w: 0.99684143}
+      scale: {x: 0.9999991, y: 0.99999934, z: 1.0000025}
+    - name: SpiderRLeg21
+      parentName: SpiderHub
+      position: {x: 0.0004102266, y: 0.00007310206, z: -0.00044657302}
+      rotation: {x: -0.7110118, y: 0.4759345, z: -0.34765926, w: -0.38351217}
+      scale: {x: 1.0000033, y: 0.9999994, z: 1.0000025}
+    - name: SpiderRLeg22
+      parentName: SpiderRLeg21
+      position: {x: -0.0014843333, y: 0, z: 5.364418e-11}
+      rotation: {x: -0.0044824476, y: -0.006158649, z: 0.15461113, w: 0.98794603}
+      scale: {x: 1.0000052, y: 1.0000005, z: 1.0000043}
+    - name: SpiderRLeg23
+      parentName: SpiderRLeg22
+      position: {x: -0.0021838218, y: 0, z: 1.4305117e-10}
+      rotation: {x: 0.013679927, y: 0.0079883635, z: 0.15193671, w: 0.9882633}
+      scale: {x: 1.0000042, y: 0.999999, z: 1.000001}
+    - name: SpiderRLeg2Ankle
+      parentName: SpiderRLeg23
+      position: {x: -0.0023064248, y: 1.9073486e-10, z: 1.13248806e-10}
+      rotation: {x: -0.003064021, y: 0.014038024, z: 0.07184154, w: 0.99731255}
+      scale: {x: 1.0000026, y: 0.9999996, z: 1.0000032}
+    - name: SpiderRLeg31
+      parentName: SpiderHub
+      position: {x: 0.00038718057, y: -0.00009055079, z: -0.00044465234}
+      rotation: {x: -0.41347858, y: 0.29030418, z: -0.51947427, w: -0.68913394}
+      scale: {x: 1.000006, y: 1.0000014, z: 1.0000085}
+    - name: SpiderRLeg32
+      parentName: SpiderRLeg31
+      position: {x: -0.0015132667, y: -9.0599045e-10, z: -1.311302e-10}
+      rotation: {x: -0.009134336, y: -0.009605859, z: 0.7298391, w: 0.6834906}
+      scale: {x: 1.0000021, y: 1.0000007, z: 1.0000027}
+    - name: SpiderRLeg33
+      parentName: SpiderRLeg32
+      position: {x: -0.0019173127, y: 0, z: 8.34465e-10}
+      rotation: {x: 0.042007346, y: -0.012418656, z: 0.15288405, w: 0.9872728}
+      scale: {x: 1.0000006, y: 1.0000046, z: 1.0000046}
+    - name: SpiderRLeg3Ankle
+      parentName: SpiderRLeg33
+      position: {x: -0.001996815, y: 0, z: 1.4305117e-10}
+      rotation: {x: 0.0049619176, y: -0.046664428, z: -0.56189084, w: 0.8258793}
+      scale: {x: 1.0000056, y: 0.99999917, z: 1.0000038}
+    - name: SpiderArmR1
+      parentName: SpiderHub
+      position: {x: 0.00031502562, y: 0.00042768073, z: -0.00023656961}
+      rotation: {x: -0.050611183, y: 0.25442356, z: 0.515543, w: -0.8166533}
+      scale: {x: 1.0000006, y: 1.0000025, z: 1.0000001}
+    - name: SpiderArmR2
+      parentName: SpiderArmR1
+      position: {x: -0.00067632913, y: 0, z: 0}
+      rotation: {x: 0.047155093, y: -0.029808596, z: 0.67082113, w: -0.739518}
+      scale: {x: 0.9999961, y: 1.0000024, z: 1.000004}
+    - name: SpiderRLeg41
+      parentName: SpiderHub
+      position: {x: 0.00034358504, y: -0.00031781694, z: -0.0003908145}
+      rotation: {x: -0.24509914, y: 0.25859284, z: -0.451679, w: -0.81795}
+      scale: {x: 1.0000031, y: 1.0000011, z: 1.0000018}
+    - name: SpiderRLeg42
+      parentName: SpiderRLeg41
+      position: {x: -0.0021773605, y: -7.8678125e-10, z: 0.000000001358986}
+      rotation: {x: -0.008980303, y: -0.10762261, z: -0.2784824, w: -0.95435023}
+      scale: {x: 1.0000081, y: 0.999995, z: 1.0000036}
+    - name: SpiderRLeg43
+      parentName: SpiderRLeg42
+      position: {x: -0.0023214128, y: 1.9073486e-10, z: -4.7683715e-11}
+      rotation: {x: -0.04118998, y: 0.046395298, z: 0.32089958, w: 0.945079}
+      scale: {x: 1.0000167, y: 0.99998146, z: 1.0000073}
+    - name: SpiderRLeg4Ankle
+      parentName: SpiderRLeg43
+      position: {x: -0.0018230896, y: 3.8146972e-10, z: -4.7683715e-11}
+      rotation: {x: -0.027783029, y: 0.06334681, z: 0.039388113, w: -0.99682695}
+      scale: {x: 1.0000002, y: 1.0000014, z: 1.0000005}
+    - name: SpiderLLeg21
+      parentName: SpiderHub
+      position: {x: 0.0004102262, y: 0.000073102005, z: 0.00044657371}
+      rotation: {x: -0.85689694, y: 0.1843157, z: 0.13463823, w: 0.46219897}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000025}
+    - name: SpiderLLeg22
+      parentName: SpiderLLeg21
+      position: {x: -0.0014843333, y: 0, z: 7.1525584e-11}
+      rotation: {x: 0.0021532474, y: 0.015785476, z: 0.013952894, w: 0.9997757}
+      scale: {x: 1.0000007, y: 1.0000001, z: 1.0000002}
+    - name: SpiderLLeg23
+      parentName: SpiderLLeg22
+      position: {x: -0.0021838215, y: 0, z: 7.1525584e-11}
+      rotation: {x: -0.014242237, y: 0.0026304268, z: -0.00036015848, w: 0.99989504}
+      scale: {x: 1.0000006, y: 1.0000004, z: 0.99999934}
+    - name: SpiderLLeg2Ankle
+      parentName: SpiderLLeg23
+      position: {x: -0.0023064248, y: 0, z: 2.3841857e-11}
+      rotation: {x: 0.0030716485, y: -0.014058332, z: 0.07148106, w: 0.9973382}
+      scale: {x: 1.0000012, y: 0.9999999, z: 1.0000005}
+    - name: SpiderArmL1
+      parentName: SpiderHub
+      position: {x: 0.0003150256, y: 0.00042768073, z: 0.00023656961}
+      rotation: {x: -0.05061105, y: 0.25442347, z: -0.5155432, w: 0.81665325}
+      scale: {x: 1.0000013, y: 1.0000062, z: 1.0000035}
+    - name: SpiderArmL2
+      parentName: SpiderArmL1
+      position: {x: -0.00067632925, y: 0, z: -2.3841857e-11}
+      rotation: {x: -0.04715503, y: 0.029808488, z: 0.67082095, w: -0.7395182}
+      scale: {x: 0.9999992, y: 1.0000046, z: 1.0000066}
+    - name: SpiderLLeg31
+      parentName: SpiderHub
+      position: {x: 0.00038718042, y: -0.000090550755, z: 0.00044465187}
+      rotation: {x: -0.4133564, y: 0.29023173, z: 0.5195285, w: 0.6891968}
+      scale: {x: 1.0000004, y: 1.000001, z: 1.000001}
+    - name: SpiderLLeg32
+      parentName: SpiderLLeg31
+      position: {x: -0.0015132666, y: -0.0000000010490416, z: 8.3446486e-11}
+      rotation: {x: 0.00922616, y: 0.009788151, z: 0.72982925, w: 0.6834972}
+      scale: {x: 0.9999993, y: 0.9999997, z: 0.99999905}
+    - name: SpiderLLeg33
+      parentName: SpiderLLeg32
+      position: {x: -0.0019173127, y: -2.8610234e-10, z: -6.914139e-10}
+      rotation: {x: -0.042053994, y: 0.012179432, z: 0.15268146, w: 0.98730516}
+      scale: {x: 1.0000021, y: 0.99999815, z: 0.99999994}
+    - name: SpiderLLeg3Ankle
+      parentName: SpiderLLeg33
+      position: {x: -0.001996815, y: -1.9073486e-10, z: 1.1920928e-10}
+      rotation: {x: -0.0047349473, y: 0.047319982, z: -0.5612815, w: 0.8262575}
+      scale: {x: 1.0000035, y: 0.99999857, z: 1.0000005}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 0.01
+    rootMotionBoneName: SpiderHub
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

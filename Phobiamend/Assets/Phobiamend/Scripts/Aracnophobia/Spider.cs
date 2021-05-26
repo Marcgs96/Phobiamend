@@ -9,13 +9,15 @@ public class Spider : MonoBehaviour
     public bool isWalking = false;
     public bool isRotatingRight = false;
     public bool isRotatingLeft = false;
-    public float speed = 5.0f;
+    public float speed = 0.0f;
+    public float maxSpeed = 0.0f;
     public float rotSpeed = 5.0f;
     bool grabbed = false;
     GameObject distanceText;
     float distanceToPlayer = 0.0f;
     Rigidbody rigidbody;
     BoxCollider collider;
+    Animator anim;
 
     //spider close
     float currentTimeClose;
@@ -38,6 +40,7 @@ public class Spider : MonoBehaviour
         SetState(SPIDER_STATE.IDLE);
         rbody = GetComponent<Rigidbody>();
         collider = GetComponent<BoxCollider>();
+        anim = GetComponent<Animator>();
         distanceText = transform.GetChild(2).gameObject;
         distanceText.SetActive(false);
         rigidbody = GetComponent<Rigidbody>();
@@ -71,7 +74,8 @@ public class Spider : MonoBehaviour
 
     void UpdateMoveState()
     {
-        transform.position = Vector3.MoveTowards(transform.position, movePosition.position, 0.1f);
+        speed = maxSpeed * Time.deltaTime;
+        transform.position = Vector3.MoveTowards(transform.position, movePosition.position, speed * Time.deltaTime);
         if (Vector3.Distance(transform.position, movePosition.position) <= 0.1f)
             SetState(SPIDER_STATE.IDLE);
     }
@@ -115,16 +119,28 @@ public class Spider : MonoBehaviour
 
     void UpdateWander()
     {
+        anim.SetFloat("turn", 0.0f);
+
         if (isWandering == false)
         {
             StartCoroutine("Wander");
         }
         if (isRotatingRight)
-            transform.Rotate(transform.up * rotSpeed * Time.deltaTime);
+        {
+            anim.SetFloat("turn", 1.2f);
+        }
         if (isRotatingLeft)
-            transform.Rotate(transform.up * -rotSpeed * Time.deltaTime);
+        {
+            anim.SetFloat("turn", 0.2f);
+        }
         if (isWalking)
-            transform.position += transform.forward * speed * Time.deltaTime;
+        {
+            anim.SetFloat("speed", 0.2f);
+        }
+        else
+        {
+            anim.SetFloat("speed", 0.0f);
+        }
     }
 
     public void SpiderGrabbed()
@@ -156,11 +172,11 @@ public class Spider : MonoBehaviour
     }
         IEnumerator Wander()
     {
-        float rotateTime = 3.0f;
+        float rotateTime = 2.66f;
         int rotateWait = Random.Range(1, 5);
         int rotateLorR = Random.Range(1, 3);
         int walkWait = Random.Range(1, 5);
-        float walkTime = 0.2f;
+        float walkTime = 3.0f;
 
         isWandering = true;
 

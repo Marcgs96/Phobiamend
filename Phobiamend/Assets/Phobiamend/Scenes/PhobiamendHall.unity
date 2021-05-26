@@ -317,7 +317,7 @@ Transform:
   m_LocalScale: {x: 1, y: 52, z: 52}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &400718847 stripped
 GameObject:
@@ -372,7 +372,7 @@ PrefabInstance:
     - target: {fileID: 7321249266544004580, guid: e9adf88d7d0ad3a4295f365246dd9431,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 7321249266544004580, guid: e9adf88d7d0ad3a4295f365246dd9431,
         type: 3}
@@ -472,7 +472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1206082449
 GameObject:
@@ -755,7 +755,7 @@ Transform:
   m_LocalScale: {x: 1, y: 52, z: 52}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!1 &1454076528
 GameObject:
@@ -1089,8 +1089,13 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 207541934176193006, guid: eee2e044dc2caaa4ab99bf4d6093066e,
         type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: UpdateTextValueF1
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1728397797}
+    - target: {fileID: 207541934176193006, guid: eee2e044dc2caaa4ab99bf4d6093066e,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetSizeofSpiders
       objectReference: {fileID: 0}
     - target: {fileID: 1607871952330248375, guid: eee2e044dc2caaa4ab99bf4d6093066e,
         type: 3}
@@ -1185,7 +1190,7 @@ PrefabInstance:
     - target: {fileID: 1607871953946925055, guid: eee2e044dc2caaa4ab99bf4d6093066e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1607871953946925055, guid: eee2e044dc2caaa4ab99bf4d6093066e,
         type: 3}
@@ -1277,11 +1282,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2589077417198479001, guid: eee2e044dc2caaa4ab99bf4d6093066e,
-        type: 3}
-      propertyPath: m_Text
-      value: "Duraci\xF3n de los eventos"
-      objectReference: {fileID: 0}
     - target: {fileID: 3039571962079775997, guid: eee2e044dc2caaa4ab99bf4d6093066e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1321,6 +1321,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7883722153646514210, guid: eee2e044dc2caaa4ab99bf4d6093066e,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1728397797}
+    - target: {fileID: 7883722153646514210, guid: eee2e044dc2caaa4ab99bf4d6093066e,
+        type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTimeOfEvents
       objectReference: {fileID: 0}
     - target: {fileID: 9010703655134308286, guid: eee2e044dc2caaa4ab99bf4d6093066e,
         type: 3}
@@ -1444,7 +1454,7 @@ PrefabInstance:
     - target: {fileID: 1832881087160830510, guid: e2ad12cb95b9f874abecbeebbd8d1e9f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1832881087160830510, guid: e2ad12cb95b9f874abecbeebbd8d1e9f,
         type: 3}

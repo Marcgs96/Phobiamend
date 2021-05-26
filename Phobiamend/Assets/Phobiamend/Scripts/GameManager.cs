@@ -113,7 +113,6 @@ public class GameManager : MonoBehaviour
     public void SetTimeOfEvents(float time)
     {
         aracnophobiaLevelData.timeToGrabSpider = (int)time;
-        aracnophobiaLevelData.timeToObserveSpider = (int)time;
     }
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {

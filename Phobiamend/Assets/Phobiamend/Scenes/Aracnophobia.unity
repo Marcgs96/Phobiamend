@@ -962,7 +962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spiderMovePoints: {fileID: 0}
   spiders: []
-  spiderPrefab: {fileID: 7550458919039129474, guid: 4964e4d8f410716499063898ec61d470,
+  spiderPrefab: {fileID: 1496267791174606110, guid: 4964e4d8f410716499063898ec61d470,
     type: 3}
   spawnPosition: {fileID: 0}
   aracnophobiaObjectives: {fileID: 0}
@@ -1272,7 +1272,7 @@ Transform:
   - {fileID: 272725624}
   - {fileID: 502161950}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &671960374
 GameObject:
@@ -1471,7 +1471,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715548448}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.01, y: 0.01, z: 0.01}
@@ -1484,7 +1484,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715548448}
   m_LocalRotation: {x: 0.704927, y: 0.055478975, z: -0.055478975, w: 0.704927}
-  m_LocalPosition: {x: -0.4156, y: 0.7423, z: -3.2902}
+  m_LocalPosition: {x: -0.743, y: 0.7423, z: -3.21}
   m_LocalScale: {x: 10, y: 10, z: 5}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2361,7 +2361,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1674396502
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3371,7 +3371,7 @@ PrefabInstance:
     - target: {fileID: 7821417598114643188, guid: cc008cae6f59a9f41849a3875b618fca,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7821417598114643188, guid: cc008cae6f59a9f41849a3875b618fca,
         type: 3}
