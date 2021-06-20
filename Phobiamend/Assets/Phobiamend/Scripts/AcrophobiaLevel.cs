@@ -12,6 +12,14 @@ public struct AcrophobiaLevelData
     public float platformsTransparency;
 }
 
+public struct AcrophobiaScore
+{
+    public int objectivesScore;
+    public float timeScore;
+    public float dificultySMultiplier;
+    public float totalScore;
+}
+
 public class AcrophobiaLevel : MonoBehaviour
 {
     public List<GameSecuence> gameSecuences;
@@ -19,11 +27,13 @@ public class AcrophobiaLevel : MonoBehaviour
     public int currentSecuence = 0;
 
     public AcrophobiaLevelData levelData;
+    public AcrophobiaScore scores;
 
     public GameObject startPlatform;
     public GameObject finalPlatform;
     private GameObject scoreUI;
     public TeleportZone endTeleport;
+    public GameObject congratulations;
 
     public int playerScore = 0;
     public int ringScore = 0;
@@ -33,9 +43,6 @@ public class AcrophobiaLevel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startPlatform = GameObject.Find("StartingPlatform");
-        finalPlatform = GameObject.Find("FinalPlatform");
-        endTeleport = GameObject.Find("EndTeleport").GetComponent<TeleportZone>();
         scoreUI = finalPlatform.transform.GetChild(0).gameObject;
         SetLevelData();
         InitLevel();
@@ -57,7 +64,7 @@ public class AcrophobiaLevel : MonoBehaviour
             gs.enabled = false;
         }
 
-        endTeleport.SetToOutState();
+        //endTeleport.SetToOutState();
 
         gameSecuences[0].enabled = true;
         gameSecuences[0].teleport.SetToInState();
@@ -67,6 +74,7 @@ public class AcrophobiaLevel : MonoBehaviour
         ringScore = 0;
         timeScore = 0;
         heightMultiplier = 0;
+        congratulations.SetActive(false);
     }
 
     public void RestartLevel()
@@ -76,10 +84,10 @@ public class AcrophobiaLevel : MonoBehaviour
             item.enabled = true;
             item.Restart();
         }
-        scoreUI.transform.GetChild(1).GetChild(1).GetComponent<Text>().text = "0000";
-        scoreUI.transform.GetChild(1).GetChild(3).GetComponent<Text>().text = "0000";
-        scoreUI.transform.GetChild(1).GetChild(5).GetComponent<Text>().text = "0000";
-        scoreUI.transform.GetChild(1).GetChild(7).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(2).GetChild(0).GetChild(0).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(2).GetChild(1).GetChild(0).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(2).GetChild(2).GetChild(0).GetComponent<Text>().text = "0000";
+        scoreUI.transform.GetChild(2).GetChild(3).GetChild(0).GetComponent<Text>().text = "0000";
         InitLevel();
     }
 
@@ -121,18 +129,21 @@ public class AcrophobiaLevel : MonoBehaviour
             endTeleport.SetToNoneState();
             endTeleport.gameObject.SetActive(false);
             CalculateScore();
+            congratulations.SetActive(true);
         }
     }
 
     public void CalculateScore()
     {
-        heightMultiplier = levelData.platformsHeight / 5;
-        playerScore = (ringScore + timeScore) * heightMultiplier;
+        scores.timeScore = timeScore;
+        scores.objectivesScore = ringScore;
+        scores.dificultySMultiplier = (levelData.platformsHeight * (5 - levelData.platformsSize) * (1.0f - levelData.platformsTransparency)) / 3.0f;
+        scores.totalScore = scores.objectivesScore + scores.timeScore * scores.dificultySMultiplier;
 
-        scoreUI.transform.GetChild(1).GetChild(1).GetComponent<Text>().DOText(ringScore.ToString(), 1.5f, true, ScrambleMode.Numerals);
-        scoreUI.transform.GetChild(1).GetChild(3).GetComponent<Text>().DOText(timeScore.ToString(), 2.5f, true, ScrambleMode.Numerals);
-        scoreUI.transform.GetChild(1).GetChild(5).GetComponent<Text>().DOText(heightMultiplier.ToString(), 3.5f, true, ScrambleMode.Numerals);
-        scoreUI.transform.GetChild(1).GetChild(7).GetComponent<Text>().DOText(playerScore.ToString(), 4.5f, true, ScrambleMode.Numerals);
+        scoreUI.transform.GetChild(2).GetChild(0).GetChild(0).GetComponent<Text>().text = scores.objectivesScore.ToString();
+        scoreUI.transform.GetChild(2).GetChild(1).GetChild(0).GetComponent<Text>().text = scores.timeScore.ToString("F1");
+        scoreUI.transform.GetChild(2).GetChild(2).GetChild(0).GetComponent<Text>().text = scores.dificultySMultiplier.ToString("F1");
+        scoreUI.transform.GetChild(2).GetChild(3).GetChild(0).GetComponent<Text>().text = scores.totalScore.ToString("F1");
     }
 
 }

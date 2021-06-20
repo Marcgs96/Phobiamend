@@ -59,7 +59,7 @@ public class GameSecuence : MonoBehaviour
 
         for (int i = 0; i < ringsData.Count; i++)
         {
-            Vector3 randomDirectorVector = new Vector3(UnityEngine.Random.Range(-1.0f, 1.0f), UnityEngine.Random.Range(0.0f, -0.7f), UnityEngine.Random.Range(-1.0f, 1.0f)).normalized;
+            Vector3 randomDirectorVector = new Vector3(UnityEngine.Random.Range(-1.0f, 1.0f), UnityEngine.Random.Range(-0.4f, -0.7f), UnityEngine.Random.Range(-1.0f, 1.0f)).normalized;
             rings.Add(Instantiate(ringPrefab, transform.position + (randomDirectorVector * ringPlacementRadius), Quaternion.identity).GetComponent<Ring>());
             SetRingData(rings[i], ringsData[i]);
         }

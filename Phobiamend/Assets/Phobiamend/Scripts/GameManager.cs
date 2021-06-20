@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +11,7 @@ public class GameManager : MonoBehaviour
     public DelegateHandler delegateHandler;
     public AcrophobiaLevel acrophobiaLevel;
     public AracnophobiaLevel aracnophobiaLevel;
+    public Image fadeImage;
 
     public GameObject player;
 
@@ -42,7 +45,8 @@ public class GameManager : MonoBehaviour
 
     public void StartLevel(string level)
     {
-       SceneManager.LoadScene(level);
+        FadeIn(2.0f);
+        SceneManager.LoadScene(level);
     }
 
     public void ExposureLevelUp(string level)
@@ -126,6 +130,7 @@ public class GameManager : MonoBehaviour
         }
 
         SetCanvasUIEventCamera();
+        FadeOut(2.0f);
     }
 
     public void SetCanvasUIEventCamera()
@@ -141,9 +146,8 @@ public class GameManager : MonoBehaviour
     {
         if (level.Equals("Acrophobia"))
         {
-            acrophobiaLevel = gameObject.AddComponent<AcrophobiaLevel>();
+            acrophobiaLevel = GameObject.Find("Level").GetComponent<AcrophobiaLevel>();
             acrophobiaLevel.levelData = acrophobiaLevelData;
-            acrophobiaLevel.gameSecuences = GameObject.Find("Level").GetComponent<AcrophobiaLevelContainer>().gameSecuences; //Contains the GameSecuences of the level.
         }
 
         if (level.Equals("Aracnophobia"))
@@ -153,4 +157,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void FadeIn(float time)
+    {
+        fadeImage.DOFade(1.0f, time);
+    }
+
+    public void FadeOut(float time)
+    {
+        fadeImage.DOFade(0.0f, time);
+    }
 }

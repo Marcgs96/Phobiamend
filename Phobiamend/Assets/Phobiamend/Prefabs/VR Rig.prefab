@@ -601,9 +601,9 @@ MonoBehaviour:
   m_AnchorControlDeadzone: 0.75
   m_AnchorControlOffAxisDeadzone: 0.3
   m_ControllerNode: 5
-  m_SelectUsage: 3
-  m_ActivateUsage: 3
-  m_UIPressUsage: 6
+  m_SelectUsage: 2
+  m_ActivateUsage: 2
+  m_UIPressUsage: 2
   m_AxisToPressThreshold: 0.2
   m_RotateAnchorLeft: 16
   m_RotateAnchorRight: 17
@@ -993,6 +993,7 @@ MonoBehaviour:
   delegateHandler: {fileID: 0}
   acrophobiaLevel: {fileID: 0}
   aracnophobiaLevel: {fileID: 0}
+  fadeImage: {fileID: 0}
   player: {fileID: 0}
 --- !u!114 &7463233818692147228
 MonoBehaviour:

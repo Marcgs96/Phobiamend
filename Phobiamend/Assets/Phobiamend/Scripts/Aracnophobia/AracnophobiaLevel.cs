@@ -30,6 +30,8 @@ public class AracnophobiaLevel : MonoBehaviour
     public GameObject visionObjectivePrefab;
     public Transform playerSpawnPosition;
     public Transform cameraUIOffset;
+    public GameObject congratulations;
+    public GameObject ray;
 
     //scores
     AracnophobiaScore scores;
@@ -92,12 +94,16 @@ public class AracnophobiaLevel : MonoBehaviour
         cameraUIOffset = Camera.main.transform.GetChild(1);
         spiderMovePoints = GameObject.Find("SpidersMovePoints").transform;
         spawnPosition = GameObject.Find("SpidersSpawnPoint").transform;
+        congratulations.SetActive(false);
 
         for(int i = 0; i < levelData.numberOfSpiders; ++i){
-            spiders.Add(Instantiate(spiderPrefab, spawnPosition.position + new Vector3(Random.Range(-0.1f, 0.1f), 0.0f, Random.Range(-0.1f, 0.2f)), Quaternion.Euler(0.0f, Random.rotation.eulerAngles.y, 0.0f)).GetComponent<Spider>());
+            spiders.Add(Instantiate(spiderPrefab, spawnPosition.position + new Vector3(Random.Range(-0.05f, 0.05f), 0.0f, Random.Range(-0.05f, 0.05f)), Quaternion.Euler(0.0f, Random.rotation.eulerAngles.y, 0.0f)).GetComponent<Spider>());
             spiders[i].movePosition = spiderMovePoints.GetChild(i);
             spiders[i].GetComponent<BoxCollider>().enabled = false;
         }
+
+        ray = GameManager.instance.player.transform.GetChild(0).GetChild(3).gameObject;
+        ray.SetActive(false);
     }
 
     void SetSpidersData()
@@ -138,5 +144,7 @@ public class AracnophobiaLevel : MonoBehaviour
         scores.dificultySMultiplier = (levelData.numberOfSpiders + levelData.sizeOfSpiders + levelData.speedOfSpiders + levelData.timeToGrabSpider) / 4.0f;
         scores.totalScore = scores.objectivesScore + scores.timeScore * scores.dificultySMultiplier;
         aracnophobiaObjectives.SetScores(scores);
+        congratulations.SetActive(true);
+        ray.SetActive(true);
     }
 }

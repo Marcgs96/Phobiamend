@@ -37,13 +37,13 @@ public class Spider : MonoBehaviour
     void Start()
     {
         currentTimeClose = GameManager.instance.aracnophobiaLevel.levelData.timeToGrabSpider;
-        SetState(SPIDER_STATE.IDLE);
         rbody = GetComponent<Rigidbody>();
         collider = GetComponent<BoxCollider>();
         anim = GetComponent<Animator>();
         distanceText = transform.GetChild(5).gameObject;
         distanceText.SetActive(false);
         rigidbody = GetComponent<Rigidbody>();
+        SetState(SPIDER_STATE.NONE);
     }
 
     // Update is called once per frame
@@ -74,8 +74,10 @@ public class Spider : MonoBehaviour
 
     void UpdateMoveState()
     {
-        speed = maxSpeed * Time.deltaTime;
-        transform.position = Vector3.MoveTowards(transform.position, movePosition.position, speed * Time.deltaTime);
+        anim.SetFloat("speed", 1.8f);
+        anim.speed = maxSpeed;
+        anim.SetFloat("turn", 0.0f);
+        transform.LookAt(movePosition.position);
         if (Vector3.Distance(transform.position, movePosition.position) <= 0.1f)
             SetState(SPIDER_STATE.IDLE);
     }
@@ -149,6 +151,9 @@ public class Spider : MonoBehaviour
         grabbed = true;
         state = SPIDER_STATE.GRABBED;
         GameManager.instance.aracnophobiaLevel.aracnophobiaObjectives.CompleteObjective("SpiderTake");
+        anim.SetFloat("speed", 0.0f);
+        anim.SetFloat("turn", 0.0f);
+        isWandering = false;
     }
 
     public void SetState(SPIDER_STATE state)
@@ -158,11 +163,11 @@ public class Spider : MonoBehaviour
             case SPIDER_STATE.NONE:
                 break;
             case SPIDER_STATE.IDLE:
+                anim.speed = 1.0f;
                 break;
             case SPIDER_STATE.MOVEMENT:
                 break;
             case SPIDER_STATE.GRABBED:
-                isWandering = false;
                 break;
             default:
                 break;
@@ -224,6 +229,7 @@ public class Spider : MonoBehaviour
         {
             SetRigidBodyAsKinematic(true);
             SetColliderAsTrigger(true);
+            SetState(SPIDER_STATE.IDLE);
         }
     }
 }
