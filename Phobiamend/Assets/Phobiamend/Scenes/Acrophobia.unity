@@ -1941,6 +1941,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
+      objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -2167,6 +2172,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
       objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
@@ -6109,6 +6119,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
       objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
@@ -10578,6 +10593,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
+      objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -10898,6 +10918,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
       objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
@@ -14310,6 +14335,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
+      objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}
       propertyPath: m_RootOrder
@@ -15532,6 +15562,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7788571827928649667, guid: 4d7d27fa502679945b1dfa1e67b589f0,
+        type: 3}
+      propertyPath: m_TagString
+      value: GameSecuence
       objectReference: {fileID: 0}
     - target: {fileID: 8756293655223060907, guid: 4d7d27fa502679945b1dfa1e67b589f0,
         type: 3}

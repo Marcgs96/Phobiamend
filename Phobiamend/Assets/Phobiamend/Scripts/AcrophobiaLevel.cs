@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 
 public struct AcrophobiaLevelData
@@ -40,12 +41,16 @@ public class AcrophobiaLevel : MonoBehaviour
     public int timeScore = 0;
     public int heightMultiplier = 0;
 
+    private void Awake()
+    {
+
+    }
     // Start is called before the first frame update
     void Start()
     {
-        scoreUI = finalPlatform.transform.GetChild(0).gameObject;
-        SetLevelData();
         InitLevel();
+        SetLevelData();
+        scoreUI = finalPlatform.transform.GetChild(0).gameObject;
     }
 
     private void OnEnable()
@@ -58,10 +63,12 @@ public class AcrophobiaLevel : MonoBehaviour
     void InitLevel()
     {
         GameManager.instance.player.transform.position = startPlatform.transform.position;
-        foreach (GameSecuence gs in gameSecuences)
+        GameObject[] gameSecuencesGameObjects = GameObject.FindGameObjectsWithTag("GameSecuence");
+        foreach (GameObject gs in gameSecuencesGameObjects)
         {
-            gs.teleport.SetToOutState();
-            gs.enabled = false;
+            gameSecuences.Add(gs.GetComponent<GameSecuence>());
+            gs.GetComponent<GameSecuence>().teleport.SetToOutState();
+            gs.GetComponent<GameSecuence>().enabled = false;
         }
 
         //endTeleport.SetToOutState();
