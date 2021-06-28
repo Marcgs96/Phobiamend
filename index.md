@@ -6,6 +6,10 @@ The game has been developed with Unity.
 
 ## Gameplay video
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=yIkXiXpk6Fc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+<iframe src="https://www.youtube.com/embed/yIkXiXpk6Fc" 
+    width="560" 
+    height="315"
+    frameborder="0" 
+    allowfullscreen>
+</iframe>
 
